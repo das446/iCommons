@@ -1,0 +1,52 @@
+{% extends "base.html" %} {% load static %}
+
+{% block content %}
+
+<!-- User Information
+================================================== -->
+<div class="view" style="background-image: url('icommons-desktop.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12">
+        <div style="color:#ffffff;">
+          <form>
+            <div class="row justify-content-between">
+              <div class="form-group col-5">
+                <label for="formGroupExampleInput">First Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="First Name">
+              </div>
+              <div class="form-group col-5">
+                <label for="formGroupExampleInput2">Last Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Last Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Email Address</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Phone Number</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Phone Number">
+            </div>
+            <div class="row justify-content-between">
+              <div class="form-group col-5">
+                <label for="formGroupExampleInput2">University ID</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="University ID">
+              </div>
+              <div class="form-group col-5">
+                <label for="formGroupExampleInput2">Major</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Major">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Advisor</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Advisor">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

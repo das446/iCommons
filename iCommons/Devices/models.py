@@ -10,7 +10,7 @@ from Users.models import User
 class Device(models.Model):
     name = models.CharField(max_length=100)
     device_type = models.CharField(max_length=100)
-
+    status = models.CharField(max_length=100)
 
 class LoanRequest(models.Model):
     requester = models.ForeignKey(User)

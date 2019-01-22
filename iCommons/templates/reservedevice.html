@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% load static %}
+
+{% block content %}
+
+<div class="view" style="background-image: url('icommons-desktop.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+  <div class="container h-100">
+  <div class="row h-100 align-items-center">
+  <div class="col-12">
+  <div class="img-thumbnail" style="background-color: #07294D; color:#FFC600;">
+  <h1 class="text-center"> Reserve Equipment </h1>
+  <form>
+  
+  <!-- Select a device -->
+  <label for="device"><h4>Select Equipment Type... </h4></label>
+  <select name="device" class="form-control form-control-lg">
+    <option>Laptop</option>
+    <option>Charger</option>
+  </select>
+  
+  <!-- Enter the Date -->
+  <div class="mt-3">
+  <label for="device"><h4>Select Duration</h4></label>
+  <select name="device" class="form-control form-control-lg">
+    <option>24 Hours</option>
+    <option></option>
+  </select>
+
+{% endblock content %}

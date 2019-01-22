@@ -19,4 +19,7 @@ from django.contrib import admin, auth
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^users/', include('Users.urls',namespace = 'users')),
+    url(r'^appointments/', include('Appointments.urls',namespace = 'appointments')),
+    url(r'^rooms/', include('Rooms.urls',namespace = 'rooms')),
+    url(r'^devices/', include('Devices.urls',namespace = 'devices'))
 ]

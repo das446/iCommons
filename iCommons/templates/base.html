@@ -1,0 +1,94 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>iCommons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    {% block css %}
+    <!-- Latest compiled and minified Bootstrap 4 Alpha 4 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <!-- Your stuff: Third-party CSS libraries go here -->
+    <!-- This file stores project-specific CSS -->
+
+    <!-- This file stores project-specific CSS 
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+    -->
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+
+
+    {% endblock %}
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+
+
+    <!-- Logo
+================================================== -->
+    <div class="container-fluid" style="background-color:#07294D;">
+        <div class="row">
+            <div class="col-sm">
+                <img src="{% static 'images/CCILogo.png' %}" alt="..." class="img-fluid">
+            </div>
+            <div class="col-sm">
+
+            </div>
+            <div class="col-sm">
+                <h1 class="display-3" style="color: #FFC600;">iCommons</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- NAVBAR
+================================================== -->
+    <nav class="nav nav-fill" style="background-color: #FFC600;">
+        <span class="border border-dark"></span>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'users:login' %}">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                aria-epanded="true">Reservation</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="{% url 'rooms:reserve' %}">Reserve a Room</a>
+                <a class="dropdown-item" href="{% url 'devices:reserve' %}">Reserve Equipment</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'appointments:make_appointment' %}">Meet an Advisor</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Sign In</a>
+        </li>
+    </nav>
+
+
+    {% block content %}
+    {% endblock content %}
+
+
+
+    <!-- FOOTER
+================================================== -->
+    <div class="footer py-1" style="background-color:#FFC600;" align="bottom">
+        <h4>Drexel University, 3141 Chestnut Street, Philadelphia, PA 19104, 215.895.2000</h4>
+    </div>
+
+</body>

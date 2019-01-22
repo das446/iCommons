@@ -3,6 +3,5 @@ from django.contrib import admin
 import views
 
 urlpatterns = [
-    url(r'account', views.view_account, name="account"),
-    url(r'$', views.login, name="login")
+    url(r'create', views.make_appointment, name="make_appointment"),
 ]

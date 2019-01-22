@@ -10,8 +10,8 @@ from django.http import HttpResponse
 
 def login(request):
     context = {}
-    return render(request, 'Users/login.html', context)
+    return render(request, 'login.html', context)
 
-def submitLogin(request):
+def view_account(request):
     context = {}
-    return render(request, 'Users/login.html', context)
+    return render(request, 'account.html', context)
