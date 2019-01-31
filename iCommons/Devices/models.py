@@ -20,3 +20,10 @@ class LoanRequest(models.Model):
 
     def end_time(self):
         return self.start_time + self.hours
+
+
+DeviceTypes = (
+    ("Laptop", "Laptop"),
+    ("Charger", "Charger"),
+    ("HDMI", "HDMI"),
+)

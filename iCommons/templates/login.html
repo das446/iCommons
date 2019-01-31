@@ -9,16 +9,18 @@
             <div class="col-12">
                 <div class="img-thumbnail" style="background-color: #07294D; color:white;">
                     <h1 class="text-center"> iCommons Sign In </h1>
-                    <form>
+                    <form class="login" method="POST">
+                        {% csrf_token %}
                         <div class="form-group">
                             <h3>Username</h3>
-                            <input type="email" class="form-control" id="exampleInputUsername" aria-describedby="usernameHelp"
-                                placeholder="Enter Username">
+                            <input class="form-control" name="username" id="username" aria-describedby="usernameHelp"
+                                placeholder="Enter abc123 Username">
 
                         </div>
                         <div class="form-group">
                             <h3>Password</h3>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <input type="password" name="password" class="form-control" id="password"
+                                placeholder="Password">
 
                         </div>
                         <button type="submit" class="btn btn-primary btn-lg btn-block">Sign In</button>
