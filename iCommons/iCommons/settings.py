@@ -142,6 +142,10 @@ STATICFILES_DIRS = [
     os.path.join(ROOT_DIR, 'static'),
 ]
 
+STATIC_ROOT = (
+   '/home/centos/iCommons'
+)
+
 LOGIN_REDIRECT_URL = '/users/'
 
 LOGIN_URL = '/accounts/login/'
