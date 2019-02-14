@@ -29,7 +29,6 @@ SECRET_KEY = 'f)b&a1mk3585cs)5xe#cmu(v6gp&%d9l87a@v0eb8$mccxd+sq'
 DEBUG = True
 
 ALLOWED_HOSTS = ['rack113.cs.drexel.edu', '129.25.13.213']
-ALLOWED_HOSTS = ["rack113.cs.drexel.edu"]
 
 
 # Application definition
