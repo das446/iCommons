@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% load static %}
+
+{% block content %}
+
+<div class="view" style="background-image: url('icommons-desktop.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="img-thumbnail" style="background-color: #07294D; color:#FFC600;">
+                    <div class="text-center">
+                        <h1 class="display-3">Success!</h1>
+                        <hr>
+                        <p class="lead">
+                            <h3>Your request has been confirmed.</h3>
+                        </p>
+                        <hr>
+                        <p>
+                            Please click <a href="{% url 'home' %}">here</a> to return to the homepage.
+                        </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% endblock content %}

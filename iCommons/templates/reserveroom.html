@@ -18,8 +18,9 @@
                         </label>
                         <select name="room" class="form-control form-control-lg">
                             <option>Select a Room... </option>
-                            <option>Rush iCommons Conference Room</option>
-                            <option>Rush 137 Conference Room</option>
+                            {% for room in Rooms %}
+                            <option>{{type.0}}</option>
+                            {% endfor %}
                         </select>
 
                         <!-- Enter the Date -->

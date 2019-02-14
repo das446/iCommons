@@ -10,6 +10,7 @@ from Users.models import User
 
 class Ticket(models.Model):
     requester = models.ForeignKey(User)
+    subject = models.CharField(max_length=100)
     text = models.CharField(max_length=1000)
     creation_date = models.DateTimeField()
     status = models.CharField(max_length=100)

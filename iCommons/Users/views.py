@@ -29,5 +29,11 @@ def Login(request):
 
 
 def view_account(request):
-    context = {}
-    return render(request, 'account.html', context)
+    if request.method == 'GET':
+        context = {}
+        return render(request, 'account.html', context)
+
+    elif request.method == 'POST':
+        context = {}
+        #UpdateAccount
+        return render(request, 'account.html', context)

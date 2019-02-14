@@ -1,0 +1,48 @@
+{% extends "base.html" %} {% load static %}
+
+{% block content %}
+
+<!-- Reserve a room
+================================================== -->
+<div class="view" style="background-image: url('icommons-desktop.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="img-thumbnail" style="background-color: #07294D; color:#FFC600;">
+                    <h1 class="text-center"> Reserve a Conference Room </h1>
+                    <form>
+                        <!-- <div class="form-group col-5">
+                            <label for="formGroupExampleInput">Name</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+                        </div>
+                        <div class="form-group col-5">
+                            <label for="formGroupExampleInput2">Email Address</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email Address">
+                        </div> -->
+                        <div class="form-group col-10">
+                            <label for="formGroupExampleInput2">Subject</label>
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group col-10">
+                            <label for="comment">How can we help you?</label>
+                            <textarea class="form-control" rows="5" name="text" id="comment"></textarea>
+                        </div>
+                        <div class="form-group col-3">
+                            <label for="exampleFormControlFile1">Input File</label>
+                            <input name = "file" type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                        <!-- Submit Button -->
+                        <div class="container">
+                            <div class="row justify-content-md-center">
+                                <button type="submit" class="btn btn-primary btn-md btn-block col-3">Submit Ticket</button>
+                            </div>
+                        </div>
+
+                    </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+{% endblock content %}

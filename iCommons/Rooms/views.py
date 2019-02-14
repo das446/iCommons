@@ -8,3 +8,7 @@ from django.shortcuts import render
 def reserve(request):
     context = {}
     return render(request, 'reserveroom.html', context)
+
+def outlook(request):
+    context = {}
+    return render(request, 'outlooktest.html', context)

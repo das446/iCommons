@@ -2,7 +2,8 @@
 from __future__ import unicode_literals
 
 from django.shortcuts import render
-from .models import Device, DeviceTypes
+from .models import Device, DeviceTypes, LoanRequest
+import datetime
 
 # Create your views here.
 
@@ -17,8 +18,10 @@ def reserve(request):
         return render(request, 'reservedevice.html', context)
 
     if request.method == 'POST':
-        t = request.POST['device']
-        time = request.POST['time']
-        device = Device.Ob
-        LoanRequest.Create()
-        return render(request, 'reservedevice.html', context)
+        device_type = request.POST['device']
+        time = int(str(request.POST['time']).split()[0])
+        device = Device.objects.filter(
+            device_type=device_type, status="Available").first()
+        LoanRequest.objects.create(
+            requester=request.user, device=device, start_time=datetime.datetime.now(), hours=time)
+        return render(request, 'confirm.html')
