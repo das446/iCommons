@@ -142,7 +142,7 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = (
-   '/home/centos/iCommons'
+   '/var/webapps/iCommons'
 )
 
 LOGIN_REDIRECT_URL = '/users/'
