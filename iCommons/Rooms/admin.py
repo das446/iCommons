@@ -8,4 +8,4 @@ from .models import *
 
 admin.site.register(Room)
 
-admin.site.register(ReservationRequest)
+admin.site.register(Reservation)

@@ -22,7 +22,7 @@ urlpatterns = [
     url(r'^users/', include('Users.urls',namespace = 'users')),
     url(r'^accounts/', include('allauth.urls')),
     url(r'^admin/', admin.site.urls),
-    url(r'^appointments/', include('Appointments.urls',namespace = 'appointments')),
     url(r'^rooms/', include('Rooms.urls',namespace = 'rooms')),
-    url(r'^devices/', include('Devices.urls',namespace = 'devices'))
+    url(r'^devices/', include('Devices.urls',namespace = 'devices')),
+    url(r'^tickets/', include('Tickets.urls',namespace = 'tickets'))
 ]

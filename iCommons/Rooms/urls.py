@@ -4,4 +4,5 @@ import views
 
 urlpatterns = [
     url(r'reserve', views.reserve, name="reserve"),
+    url(r'outlook', views.outlook, name="outlook"),
 ]
