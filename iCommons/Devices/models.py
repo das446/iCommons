@@ -30,7 +30,7 @@ class Device(models.Model):
     status = models.CharField(max_length=100, choices = DeviceStatuses)
 
     def __str__(self):
-        return name
+        return self.name
 
 
 class LoanRequest(models.Model):
