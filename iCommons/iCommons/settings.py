@@ -141,6 +141,8 @@ STATICFILES_DIRS = [
     os.path.join(ROOT_DIR, 'static'),
 ]
 
+print(STATICFILES_DIRS)
+
 STATIC_ROOT = (
    '/var/webapps/iCommons'
 )
