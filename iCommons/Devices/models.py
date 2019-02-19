@@ -29,6 +29,9 @@ class Device(models.Model):
     device_type = models.CharField(max_length=100, choices = DeviceTypes)
     status = models.CharField(max_length=100, choices = DeviceStatuses)
 
+    def __str__(self):
+        return name
+
 
 class LoanRequest(models.Model):
     requester = models.ForeignKey(User)
