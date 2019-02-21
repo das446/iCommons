@@ -14,3 +14,4 @@ class Ticket(models.Model):
     text = models.CharField(max_length=1000, null=True)
     creation_date = models.DateTimeField()
     status = models.CharField(max_length=100, null=True)
+    seen = models.BooleanField(default=False)
