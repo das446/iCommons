@@ -169,7 +169,7 @@ EMAIL_BACKEND = "sgbackend.SendGridBackend"
 
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = 'das446drexel'
-EMAIL_HOST_PASSWORD = '##sk34syyz'
+EMAIL_HOST_PASSWORD = 'AB4IF325!'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 

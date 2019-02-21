@@ -27,7 +27,7 @@ def send_email(user,subject,text):
     to_email = "ihelp@drexel.edu"
     from_email = user.email
     print("from:" + from_email)
-    send_mail("CCI Ticket - "+subject, text,from_email, [to_email], fail_silently=False) 
+    send_mail(subject, text,from_email, [to_email], fail_silently=False) 
 
 def view_all(request):
     context = {}
