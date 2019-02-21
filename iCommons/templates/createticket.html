@@ -10,7 +10,8 @@
             <div class="col-12">
                 <div class="img-thumbnail" style="background-color: #07294D; color:#FFC600;">
                     <h1 class="text-center"> Reserve a Conference Room </h1>
-                    <form>
+                    <form method="POST" action="">
+                        {% csrf_token %}
                         <!-- <div class="form-group col-5">
                             <label for="formGroupExampleInput">Name</label>
                             <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
@@ -29,7 +30,7 @@
                         </div>
                         <div class="form-group col-3">
                             <label for="exampleFormControlFile1">Input File</label>
-                            <input name = "file" type="file" class="form-control-file" id="exampleFormControlFile1">
+                            <input name="file" type="file" class="form-control-file" id="exampleFormControlFile1">
                         </div>
                         <!-- Submit Button -->
                         <div class="container">
@@ -39,10 +40,10 @@
                         </div>
 
                     </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </div>
 
 {% endblock content %}
