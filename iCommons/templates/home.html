@@ -3,8 +3,137 @@
 {% block content %}
 <!-- SIGN IN
 ================================================== -->
-<div class="view" style="background-image: url('icommons-desktop.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-    Welcome {{ user.first_name|default:'' }}
+<div class="view" style="height: 725px; background-image: url(/static/images/icommons-desktop.png); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+<div class="row w-100 align-items-center">
+<!-- Left Column -->
+<div class="col-md-4 mt-3 mb-4 h-75">
+<div class="img-thumbnail" style="background-color: #07294D; color:#FFC600;">
+<h1 class="text-center"> Occupied Rooms </h1>
+<hr style="background-color: white; color:white;"/>
+<div class="container overflow-auto" style="height:500px">
+<h4> Room: 310</h4>
+<h4> Occupied By: Brian Stuart</h4>
+<h4> Class: CS 171</h4>
+<hr style="background-color: white; color:white;"/>
+<h4> Room: 209</h4>
+<h4> Occupied By: Kurt Schmit</h4>
+<h4> Class: CS 265</h4>
+<hr style="background-color: white; color:white;"/>
+<h4> Room: 006</h4>
+<h4> Occupied By: Jeff Salvage</h4>
+<h4> Class: CS 350</h4>
+<hr style="background-color: white; color:white;"/>
+<h4> Room: 009</h4>
+<h4> Occupied By: Jeremy Johnson</h4>
+<h4> Class: CS 270</h4>
+
+</div>
+</div>
+</div>
+<!-- Middle Column -->
+<div class="col-md-4 mt-3 mb-4 h-75">
+<div class="img-thumbnail" style="background-color: #07294D; color:#FFC600;">
+<h1 class="text-center"> Welcome! </h1>
+<hr style="background-color: white; color:white;"/>
+<img src="{% static 'images/DisplayImageFromDb.jpg' %}" alt="..." class="mx-auto d-block" >
+<p class="text-center"> Photo by BSN Co-op Seniors </p>
+<hr style="background-color: white; color:white;"/>
+<p> Nursing goes to Ireland. How good they look after the night shift aka... Flight. </p>
+</div>
+<div class="col-md-8 mt-4 align-items-center mx-auto d-block">
+<div class="img-thumbnail" style="background-color: #07294D; color:#FFC600;">
+<div class="align-items-center">
+<h5 class="text-center">To view more room locations: </h5>
+<div class="container">
+  <div class="row justify-content-md-left">
+<button type="submit" class="btn btn-primary btn-lg btn-block">Advanced Search</button>
+ </div>
+ </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column -->
+<div class="col-md-4 mt-3 mb-4 h-75">
+<div class="img-thumbnail" style="background-color: #07294D; color:#FFC600;">
+<h1 class="text-center"> Available Rooms </h1>
+<hr style="background-color: white; color:white;"/>
+<div class="container overflow-auto" style="height:500px">
+<div class="row">
+<div class="col-6" style="padding-right:20px; border-right:1px solid white;">
+<h3 class="text-center">Room: 321</h3>
+</div>
+<div class="col-6">
+<h3 class="text-center">Room: 110</h3>
+</div>
+</div>
+<hr style="background-color: white; color:white;"/>
+<div class="row">
+<div class="col-6" style="padding-right:20px; border-right:1px solid white;">
+<h3 class="text-center">Room: 011</h3>
+</div>
+<div class="col-6">
+<h3 class="text-center">Room: 412</h3>
+</div>
+</div>
+<hr style="background-color: white; color:white;"/>
+<div class="row">
+<div class="col-6" style="padding-right:20px; border-right:1px solid white;">
+<h3 class="text-center">Room: 141</h3>
+</div>
+<div class="col-6">
+<h3 class="text-center">Room: 153</h3>
+</div>
+</div>
+<hr style="background-color: white; color:white;"/>
+<div class="row">
+<div class="col-6" style="padding-right:20px; border-right:1px solid white;">
+<h3 class="text-center">Room: 309</h3>
+</div>
+<div class="col-6">
+<h3 class="text-center">Room: 206</h3>
+</div>
+</div>
+<hr style="background-color: white; color:white;"/>
+<div class="row">
+<div class="col-6" style="padding-right:20px; border-right:1px solid white;">
+<h3 class="text-center">Room: 235</h3>
+</div>
+<div class="col-6">
+<h3 class="text-center">Room: 420</h3>
+</div>
+</div>
+<hr style="background-color: white; color:white;"/>
+<div class="row">
+<div class="col-6" style="padding-right:20px; border-right:1px solid white;">
+<h3 class="text-center">Room: 211</h3>
+</div>
+<div class="col-6">
+<h3 class="text-center">Room: 416</h3>
+</div>
+</div>
+<hr style="background-color: white; color:white;"/>
+<div class="row">
+<div class="col-6" style="padding-right:20px; border-right:1px solid white;">
+<h3 class="text-center">Room: 001</h3>
+</div>
+<div class="col-6">
+<h3 class="text-center">Room: 321</h3>
+</div>
+</div>
+<hr style="background-color: white; color:white;"/>
+<div class="row">
+<div class="col-6" style="padding-right:20px; border-right:1px solid white;">
+<h3 class="text-center">Room: 001</h3>
+</div>
+<div class="col-6">
+<h3 class="text-center">Room: 321</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 {% endblock content %}

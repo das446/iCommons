@@ -2,16 +2,14 @@
 
 {% block content %}
 
-<div class="view" style="background-image: url('icommons-desktop.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-  <form method="post" action="" id="form">
-    {% csrf_token %}
+<div class="view" style="height: 725px; background-image: url(/static/images/icommons-desktop.png); background-repeat: no-repeat; background-size: cover; background-position: center center;">
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12">
           <div class="img-thumbnail" style="background-color: #07294D; color:#FFC600;">
             <h1 class="text-center"> Reserve Equipment </h1>
-
-
+		<form method="post" action="" id="form">
+		{% csrf_token %}
             <!-- Select a device -->
             <label for="device">
               <h4>Select Equipment Type... </h4>
@@ -31,14 +29,14 @@
                 <option>24 Hours</option>
               </select>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="form-group">
-        <button id="submit" type="submit" class="btn btn-primary float-right col-md-3">Submit</button>
-      </div>
-
-  </form>
+          
+      
+     <button type="submit" class="btn btn-primary btn-md btn-block mt-4">Submit<button>
+</div>
+</form>
+</div>
+</div>
+</div>
 </div>
 
 {% endblock content %}
