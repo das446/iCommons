@@ -3,6 +3,10 @@ from .settings import *
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
 
+STATIC_ROOT = (
+   '/var/webapps/'
+)
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
