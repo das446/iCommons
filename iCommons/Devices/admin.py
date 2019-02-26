@@ -9,3 +9,5 @@ from .models import *
 
 admin.site.register(Device)
 admin.site.register(LoanRequest)
+admin.site.register(DeviceType)
+admin.site.register(DeviceStatus)
