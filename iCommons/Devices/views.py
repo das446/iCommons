@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 
 from django.shortcuts import render
-from .models import Device, DeviceTypes, LoanRequest
+from .models import Device, DeviceType, LoanRequest
 import datetime
 
 # Create your views here.
@@ -13,7 +13,7 @@ def reserve(request):
     if request.method == 'GET':
         context = {
             "Devices": Device.objects.all(),
-            "Types": DeviceTypes,
+            "Types": DeviceType.objects.all(),
         }
         return render(request, 'reservedevice.html', context)
 
