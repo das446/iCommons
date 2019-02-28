@@ -172,3 +172,5 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
 SENDGRID_API_KEY = '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'
+
+ihelp_email = "das446@drexel.edu"
