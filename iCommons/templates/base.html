@@ -74,10 +74,11 @@
         <li class="nav-item">
             <a class="nav-link" href="{% url 'tickets:create' %}">Submit a Ticket</a>
         </li>
-        {% if user.is_authenticated %}
+        
+        <!-- {% if user.is_authenticated %}
         <li class="nav-item">
             <a class="nav-link" href="{% url 'users:account' %}">Account</a>
-        </li>
+        </li> -->
 
         {% if user.is_superuser %}
         <li class="nav-item">
