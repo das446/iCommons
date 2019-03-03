@@ -1,0 +1,72 @@
+{% extends "base.html" %} {% load static %}
+
+{% block content %}
+
+<!-- User Information
+================================================== -->
+<div class="view" style="height: 725px; background-image: url(/static/images/icommons-desktop.png); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="img-thumbnail" style="background-color: #254363; color:#FFC600;">
+                    <h1 class="text-center"> Tickets </h1>
+                </div>
+                <table class="table table-bordered table-hover" style="background-color: #254363; color:#FFC600;">
+                    <thead>
+                        <tr>
+                            <th scope="col">Ticket </th>
+                            <th scope="col">Subject</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Submit Button Does Not Work</td>
+                            <td>Scott</td>
+                            <td>snb57</td>
+                            <td>02/10/2019</td>
+                            <td>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Complete</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Can't Reserve Classrom</td>
+                            <td>Scott</td>
+                            <td>snb57</td>
+                            <td>02/10/2019</td>
+                            <td>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Complete</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Home Button Does Not Work</td>
+                            <td>Scott</td>
+                            <td>snb57</td>
+                            <td>02/10/2019</td>
+                            <td>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Complete</label>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

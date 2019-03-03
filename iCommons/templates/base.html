@@ -74,7 +74,7 @@
         <li class="nav-item">
             <a class="nav-link" href="{% url 'tickets:create' %}">Submit a Ticket</a>
         </li>
-        
+
         <!-- {% if user.is_authenticated %}
         <li class="nav-item">
             <a class="nav-link" href="{% url 'users:account' %}">Account</a>
@@ -82,9 +82,8 @@
 
         {% if user.is_superuser %}
         <li class="nav-item">
-            <a class="nav-link" href="{% url 'tickets:view' %}">View Tickets</a>
+            <a class="nav-link" href="{% url 'tickets:view_all' %}">View Tickets</a>
         </li>
-        {% endif %}
 
         <li class="nav-item">
             <a class="nav-link" href="{% url 'account_logout' %}">Sign Out</a>
