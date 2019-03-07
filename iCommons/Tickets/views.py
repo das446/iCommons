@@ -41,6 +41,11 @@ def view_all(request):
 def view_ticket(request, signed_pk):
     try:
       pk = Ticket.signer.unsign(signed_pk)
-      order = Ticket.objects.get(pk=pk)
+      ticket = Ticket.objects.get(pk=pk)
+      context = {
+        "Ticket":ticket
+      }
+      return render(request, 'viewticket.html', context)
+
     except (BadSignature, Ticket.DoesNotExist):
-      raise Http404('No Order matches the given query.')
+      raise Http404('Invalid ticket.')
