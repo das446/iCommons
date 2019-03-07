@@ -37,7 +37,7 @@ class Device(models.Model):
 
 class LoanRequest(models.Model):
     requester = models.ForeignKey(User)
-    device = models.ForeignKey(Device)
+    device = models.CharField(max_length=100)
     start_time = models.DateTimeField()
     hours = models.IntegerField()
     status = models.ForeignKey("LoanStatus",null=True)

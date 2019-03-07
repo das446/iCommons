@@ -15,23 +15,22 @@
               <h4>Select Equipment Type... </h4>
             </label>
             <select name="device" class="form-control form-control-lg">
-              {% for type in Types %}
-              <option>{{type.name}}</option>
+              {% for device in Devices %}
+              <option>{{device}}</option>
               {% endfor %}
             </select>
 
             <!-- Enter the Date -->
             <div class="mt-3">
               <label for="device">
-                <h4>Select Duration</h4>
+                <h4>Select How Many Hours</h4>
               </label>
-              <select name="time" class="form-control form-control-lg">
-                <option>24 Hours</option>
+              <input type = "number" name="time" min="1" max = "24" class="form-control form-control-lg" required>
               </select>
             </div>
           
       
-     <button type="submit" class="btn btn-primary btn-md btn-block mt-4">Submit<button>
+     <button type="submit" class="btn btn-primary btn-md btn-block mt-4">Submit</button>
 </div>
 </form>
 </div>
