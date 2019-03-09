@@ -14,7 +14,11 @@ def GetAllDevices():
 
     cursor.execute("""
     SELECT 
-        DevLoanShark.dbo.devices.comments
+        DevLoanShark.dbo.devices.name,
+        DevLoanShark.dbo.locations.locationName,
+        DevLoanShark.dbo.statusTypes.statusName,
+        DevLoanShark.dbo.deviceTypes.typeName,
+
     FROM DevLoanShark.dbo.devices
     INNER JOIN deviceTypes ON devices.typeID=deviceTypes.typeID
     INNER JOIN statusTypes ON devices.statusID=statusTypes.statusID
@@ -23,12 +27,10 @@ def GetAllDevices():
     """)
 
 
-    devices = []
     for row in cursor:
         print(row)
     conn.close()
 
-    return devices
 
 def GetRandomDeviceOfType(t):
     conn = pymssql.connect(server, user, password, "DevLoanShark")
