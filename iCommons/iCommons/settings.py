@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -56,6 +58,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 LOCAL_APPS = [
@@ -145,7 +148,7 @@ STATIC_ROOT = (
    '/var/webapps/iCommons'
 )
 
-LOGIN_REDIRECT_URL = '/users/'
+LOGIN_REDIRECT_URL = '/'
 
 LOGIN_URL = '/accounts/login/'
 
@@ -174,3 +177,5 @@ EMAIL_USE_TLS = True
 SENDGRID_API_KEY = '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'
 
 ihelp_email = "das446@drexel.edu"
+
+INTERNAL_IPS = '127.0.0.1'
