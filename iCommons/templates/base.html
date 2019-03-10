@@ -36,7 +36,7 @@
 
 
 
-<body>
+<body style="background-color:#07294D;">
 
 
     <!-- Logo
@@ -44,14 +44,20 @@
     <div class="container-fluid" style="background-color:#07294D;">
         <div class="row">
             <div class="col-sm">
-                <img src="{% static 'images/CCILogo.png' %}" alt="..." class="img-fluid">
+                <a href="https://drexel.edu/"><img src="{% static 'images/CCILogo.png' %}" alt="..." class="img-fluid"></a>
             </div>
             <div class="col-sm">
 
             </div>
             <div class="col-sm align-self-end">
 				<h1 class="display-4 font-weight-bold" style="color: #FFC600;">iCommons</h1>
-			</div>
+            </div>
+
+            <div class="col-sm align-self-end btn-xs">
+                <a class="btn btn-primary btn-lg btn-block" href="{% url 'tickets:create' %}">Submit Ticket</a>
+              </div>
+            
+
         </div>
     </div>
 
@@ -72,18 +78,20 @@
             </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{% url 'tickets:create' %}">Submit a Ticket</a>
+            <a class="nav-link" href="https://drexel.edu/cci/">My CCI</a>
         </li>
+        
+        {% comment %} 
         {% if user.is_authenticated %}
         <li class="nav-item">
             <a class="nav-link" href="{% url 'users:account' %}">Account</a>
-        </li>
+        </li> 
+        {% endcomment %}
 
         {% if user.is_superuser %}
         <li class="nav-item">
             <a class="nav-link" href="{% url 'tickets:view' %}">View Tickets</a>
         </li>
-        {% endif %}
 
         <li class="nav-item">
             <a class="nav-link" href="{% url 'account_logout' %}">Sign Out</a>

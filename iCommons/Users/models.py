@@ -5,7 +5,6 @@ from __future__ import unicode_literals
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.core.validators import RegexValidator
-import helpers
 
 # Create your models here.
 
@@ -14,7 +13,7 @@ class User(AbstractUser):
     """
     main user profile model, all users will have a Profile
     """
-    user_type = models.CharField(choices = helpers.Roles, max_length = 20, default = "Student")
+    user_type = models.ForeignKey("UserType")
     first_name = models.CharField(max_length=100, null = True, blank=True)
     last_name = models.CharField(max_length=100, null = True, blank=True)
     email = models.CharField(max_length=100, null = True, blank=True)
@@ -27,3 +26,5 @@ class User(AbstractUser):
     advisor = models.ForeignKey('User',null = True, blank=True)
 
 
+class UserType(models.Model):
+    name = models.CharField(max_length=100)

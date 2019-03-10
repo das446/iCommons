@@ -1,5 +1,5 @@
 {% extends "base.html" %} {% load static %}
-
+{% load i18n %}
 {% block content %}
 <!-- SIGN IN
 ================================================== -->
@@ -9,11 +9,11 @@
             <div class="col-12">
                 <div class="img-thumbnail" style="background-color: #07294D; color:white;">
                     <h1 class="text-center"> iCommons Sign In </h1>
-                    <form class="login" method="POST">
+                    <form class="login" method="POST" action="{% url 'account_login' %}">
                         {% csrf_token %}
                         <div class="form-group">
                             <h3>Username</h3>
-                            <input class="form-control" name="username" id="username" aria-describedby="usernameHelp"
+                            <input class="form-control" name="login" id="username" aria-describedby="usernameHelp"
                                 placeholder="Enter abc123 Username">
 
                         </div>

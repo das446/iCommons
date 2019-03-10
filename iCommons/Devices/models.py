@@ -6,28 +6,30 @@ from Users.models import User
 
 # Create your models here.
 
-DeviceTypes = (
-    ("Laptop", "Laptop"),
-    ("Charger", "Charger"),
-    ("HDMI", "HDMI"),
-)
+class DeviceType(models.Model):
+    name = models.CharField(max_length=100)
 
-DeviceStatuses = (
-    ("Reserved", "Reserved"),
-    ("Loaned Out", "Loaned Out"),
-    ("Available", "Available"),
-)
+    def __str__(self):
+        return self.name
 
-LoanStatuses = (
-    ("Awaiting Pickup", "Awaiting Pickup"),
-    ("Loaned Out", "Loaned Out"),
-    ("Returned", "Returned"),
-)
+
+class DeviceStatus(models.Model):
+    status = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.status
+
+
+class LoanStatus(models.Model):
+    status = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.status
 
 class Device(models.Model):
     name = models.CharField(max_length=100)
-    device_type = models.CharField(max_length=100, choices = DeviceTypes)
-    status = models.CharField(max_length=100, choices = DeviceStatuses)
+    device_type = models.ForeignKey("DeviceType")
+    status = models.ForeignKey("DeviceStatus")
 
     def __str__(self):
         return self.name
@@ -35,10 +37,12 @@ class Device(models.Model):
 
 class LoanRequest(models.Model):
     requester = models.ForeignKey(User)
-    device = models.ForeignKey(Device)
+    device = models.ForeignKey("Device")
     start_time = models.DateTimeField()
     hours = models.IntegerField()
+    status = models.ForeignKey("LoanStatus",null=True)
 
 
     def end_time(self):
         return self.start_time + self.hours
+
