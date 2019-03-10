@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin, auth
 from views import home
-from .settings import DEBUG
+#from .settings import DEBUG
 
 urlpatterns = [
     url(r'^$', home, name="home" ),
