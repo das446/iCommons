@@ -28,8 +28,8 @@ urlpatterns = [
     url(r'^tickets/', include('Tickets.urls',namespace = 'tickets'))
 ]
 
-if DEBUG:
-    import debug_toolbar
-    urlpatterns = [
-        url(r'^__debug__/', include(debug_toolbar.urls)),
-    ] + urlpatterns
+# if DEBUG:
+#     import debug_toolbar
+#     urlpatterns = [
+#         url(r'^__debug__/', include(debug_toolbar.urls)),
+#     ] + urlpatterns
