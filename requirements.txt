@@ -2,7 +2,6 @@ certifi==2018.11.29
 chardet==3.0.4
 Django==1.11.16
 django-allauth==0.38.0
-django-debug-toolbar==1.11
 django-user-management==17.0.0
 djangorestframework==3.4.7
 idna==2.8
