@@ -1,0 +1,35 @@
+{% extends "base.html" %} {% load static %}
+
+{% block content %}
+
+<!-- User Information
+================================================== -->
+<div class="view" style="height: 725px; background-image: url(/static/images/icommons-desktop.png); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+	<div class="row h-100 w-100 align-items-center">
+		<div class="col-md-6 mb-6 h-25">
+			<div class="img-thumbnail" style="background-color: #254363; color:#FFC600;">
+				<form>
+					<div class="form-group col-8">
+						<label for="formGroupExampleInput">Enter Course Number</label>
+						<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Course Number">
+					</div>
+					<div>
+						<h1 class="font-weight-bold" style="color: #FFC600;">or</h1>
+					</div>
+					<div class="form-group col-8">
+						<label for="formGroupExampleInput2">Enter Class Name</label>
+						<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Class Name">
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="col-md-6 mb-6 h-75">
+			<div class="img-thumbnail" style="background-color: #254363; color:#FFC600;">
+				<img src="classrooms.png" alt="..." class="img-fluid mx-auto" >
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock content %}
