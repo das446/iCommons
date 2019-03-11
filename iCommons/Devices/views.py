@@ -44,7 +44,7 @@ def reserve(request):
 
 def send_email(user,subject,text):
     from_email = settings.ihelp_email
-    to_email = user
+    to_email = user + "@drexel.edu"
     print("from:" + from_email)
     send_mail(subject, text,from_email, [to_email], fail_silently=False) 
 
