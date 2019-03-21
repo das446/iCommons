@@ -17,6 +17,7 @@ from django.conf.urls import url, include
 from django.contrib import admin, auth
 from views import home
 from .settings import DEBUG
+from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     url(r'^$', home, name="home" ),
@@ -25,7 +26,9 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^rooms/', include('Rooms.urls',namespace = 'rooms')),
     url(r'^devices/', include('Devices.urls',namespace = 'devices')),
-    url(r'^tickets/', include('Tickets.urls',namespace = 'tickets'))
+    url(r'^tickets/', include('Tickets.urls',namespace = 'tickets')),
+
+    
 ]
 
 if DEBUG:
