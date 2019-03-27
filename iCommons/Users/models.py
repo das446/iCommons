@@ -56,8 +56,8 @@ class User(AbstractUser):
 
         send_mail(subject, text, "ihelp.accounts@drexel.edu", [to_email], fail_silently=False) 
 
-    def save(self,update_fields=['last_login']):
-        super(User,self).save()
+    def save(self, *args, **kwargs):
+        super(User,self).save(*args, **kwargs)
         if self.password is None or self.password=="":
             self.send_password_reset_email()
             print("sent password email")
@@ -75,24 +75,6 @@ class User(AbstractUser):
         url = "http://127.0.0.1:8000"
 
         return settings.url
-
-   
-
-
-    #add_form = UserCreationForm
-    #list_display = ("email",)
-    #ordering = ("email",)
-
-    # fieldsets = (
-    #     (None, {'fields': ('email', 'password', 'first_name', 'last_name')}),
-    #     )
-    # add_fieldsets = (
-    #     (None, {
-    #         'classes': ('wide',),
-    #         'fields': ('email', 'password', 'first_name', 'last_name', 'is_superuser', 'is_staff', 'is_active')}
-    #         ),
-    #     )
-    # filter_horizontal = ()
 
 
 
