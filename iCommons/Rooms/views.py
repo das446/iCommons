@@ -12,3 +12,7 @@ def reserve(request):
 def outlook(request):
     context = {}
     return render(request, 'outlooktest.html', context)
+
+def view_available(request):
+    context = {}
+    return render(request, 'ClassAvailable.html', context)

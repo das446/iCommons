@@ -2,12 +2,14 @@ certifi==2018.11.29
 chardet==3.0.4
 Django==1.11.16
 django-allauth==0.38.0
+django-debug-toolbar==1.11
 django-user-management==17.0.0
 djangorestframework==3.4.7
 idna==2.8
 incuna-mail==3.0.0
 incuna-pigeon==0.1.0
 oauthlib==3.0.1
+pymssql==2.1.4
 python-http-client==3.1.0
 python-openid==2.2.5
 pytz==2018.5
@@ -15,4 +17,5 @@ requests==2.21.0
 requests-oauthlib==1.2.0
 sendgrid==3.6.5
 sendgrid-django==4.2.0
+sqlparse==0.2.4
 urllib3==1.24.1

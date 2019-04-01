@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -56,6 +58,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 LOCAL_APPS = [
@@ -72,7 +75,7 @@ ROOT_URLCONF = 'iCommons.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates'),os.path.join(BASE_DIR, 'templates', 'allauth') ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -145,32 +148,36 @@ STATIC_ROOT = (
    '/var/webapps/iCommons'
 )
 
-LOGIN_REDIRECT_URL = '/users/'
+LOGIN_REDIRECT_URL = '/'
 
 LOGIN_URL = '/accounts/login/'
 
-AUTH_LDAP_START_TLS = True
+#AUTH_LDAP_START_TLS = True
 
 AUTH_USER_MODEL = "Users.User"
 
 AUTHENTICATION_BACKENDS = (
     # Needed to login by username in Django admin, regardless of `allauth`
-    #'django.contrib.auth.backends.ModelBackend',
+    'django.contrib.auth.backends.ModelBackend',
 
     # `allauth` specific authentication methods, such as login by e-mail
-    'allauth.account.auth_backends.AuthenticationBackend',
+    #'allauth.account.auth_backends.AuthenticationBackend',
 )
 
 SITE_ID = 1
 
 EMAIL_BACKEND = "sgbackend.SendGridBackend"
 
-EMAIL_HOST = 'smtp.sendgrid.net'
-EMAIL_HOST_USER = 'das446drexel'
-EMAIL_HOST_PASSWORD = 'AB4IF325!'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+# EMAIL_HOST = 'smtp.sendgrid.net'
+# EMAIL_HOST_USER = 'das446drexel'
+# EMAIL_HOST_PASSWORD = 'AB4IF325!'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
 
 SENDGRID_API_KEY = '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'
 
 ihelp_email = "das446@drexel.edu"
+
+INTERNAL_IPS = '127.0.0.1'
+
+url = "http://127.0.0.1:8000"
