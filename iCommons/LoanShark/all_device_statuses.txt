@@ -1,0 +1,6 @@
+(u'Loaned Out',)
+(u'In Storage',)
+(u'Lost',)
+(u'Stolen',)
+(u'Deactivated',)
+(u'Assigned',)

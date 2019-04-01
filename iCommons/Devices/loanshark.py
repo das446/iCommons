@@ -17,7 +17,7 @@ def GetAllDevices():
         DevLoanShark.dbo.devices.name,
         DevLoanShark.dbo.locations.locationName,
         DevLoanShark.dbo.statusTypes.statusName,
-        DevLoanShark.dbo.deviceTypes.typeName,
+        DevLoanShark.dbo.deviceTypes.typeName
 
     FROM DevLoanShark.dbo.devices
     INNER JOIN deviceTypes ON devices.typeID=deviceTypes.typeID
@@ -32,7 +32,7 @@ def GetAllDevices():
     conn.close()
 
 
-def GetRandomDeviceOfType(t):
+def GetRandomDeviceOfType(device_type):
     conn = pymssql.connect(server, user, password, "DevLoanShark")
     cursor = conn.cursor()
 
@@ -51,12 +51,42 @@ def GetRandomDeviceOfType(t):
         and deviceTypes.typeName = '{}'
         and devices.name Like 'CCI-Rush-L%'
     ;
-    """.format(t)
+    """.format(device_type)
 
     cursor.execute(query)
 
     devices = []
 
     for row in cursor:
-        devices.append(row[0])    
+        devices.append(row[0]) 
+    conn.close()   
     return random.choice(devices)
+
+def ReserveDevice(device):
+    conn = pymssql.connect(server, user, password, "DevLoanShark")
+    cursor = conn.cursor()
+
+    get_loan_id_query="""
+        SELECT DevLoanShark.dbo.statusTypes.statusID
+        FROM DevLoanShark.dbo.statusTypes
+        WHERE statusTypes.statusName = 'Loaned Out'
+    ;
+    """
+
+    cursor.execute(get_loan_id_query)
+    t=0
+    for type_id in cursor:
+        t = type_id
+    t = t[0]
+
+    set_query = """
+        UPDATE DevLoanShark.dbo.devices
+        SET devices.typeID = '{}'
+        WHERE devices.name = '{}'
+    ;
+    """.format(t,device)
+
+    print(device)
+
+    cursor.execute(set_query)
+    conn.close()
