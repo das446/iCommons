@@ -17,9 +17,6 @@ from django.contrib.sites.models import Site
 # Create your models here.
 
 class User(AbstractUser):
-    """
-    main user profile model, all users will have a Profile
-    """
     user_type = models.ForeignKey("UserType", default = 2)
     first_name = models.CharField(max_length=100, null = True, blank=True)
     last_name = models.CharField(max_length=100, null = True, blank=True)
