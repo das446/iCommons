@@ -1,11 +1,22 @@
 .footer {
-  position: fixed;
+  /*position: fixed;*/
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
-  color: #007bff;
+  background-color: #07294D;
+  color: rgb(250, 250, 250);
   text-align: center;
+  font-size: medium;
+  -webkit-text-stroke: 0.5px black;
+}
+
+.nav-link{
+  color: white;
+  font-size: large;
+}
+/* mouse over link */
+.nav-link:hover {
+  color: yellow;
 }
 
 .half {
