@@ -18,11 +18,21 @@ class Room(models.Model):
     number = models.CharField(max_length=10)
     reservations = models.ManyToManyField("Reservation")
 
+    def CurReservation(self,time):
+        for reservation in self.reservations:
+            if is_time_between(reservation.start_time, reservation.end_time, time):
+                return reservation
+        return None
+
     def Available(self, time):
-        return True
+        return self.CurReservation(time) == None
 
     def CurClass(self, time):
-        return None
+        r = self.CurReservation(time)
+        if r==None:
+            return None
+        return r.cur_class
+        
 
 class Class(models.Model):
     name = models.CharField(max_length=100) #full name
@@ -45,6 +55,14 @@ class Reservation(models.Model):
             return "Occupied by "+teacher+"\nClass:"+self.cur_class.course_id 
         else:
             return ""
+
+def is_time_between(begin_time, end_time, check_time=None):
+# If check time is not given, default to current UTC time
+    check_time = check_time or datetime.utcnow().time()
+    if begin_time < end_time:
+        return check_time >= begin_time and check_time <= end_time
+    else: # crosses midnight
+        return check_time >= begin_time or check_time <= end_time
 
 
 
