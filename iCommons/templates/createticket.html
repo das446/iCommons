@@ -26,7 +26,7 @@
                         </div>
                         <div class="form-group col-10">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control" id="subject" name="email" placeholder="abc123@drexel.edu">
+                            <input type="email" class="form-control" id="subject" name="email" value="{{ request.user.email }}" placeholder="abc123@drexel.edu">
                         </div>
                         <div class="form-group col-10">
                             <label for="formGroupExampleInput2">Subject</label>
