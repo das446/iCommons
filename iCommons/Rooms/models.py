@@ -16,15 +16,39 @@ RoomStatuses = (
 class Room(models.Model):
     building = models.CharField(max_length=100)
     number = models.CharField(max_length=10)
-    cur_class = models.CharField(max_length=100)
-    cur_teacher = models.ForeignKey(User)
     reservations = models.ManyToManyField("Reservation")
 
-    def available(self, time):
+    def Available(self, time):
         return True
+
+    def CurClass(self, time):
+        return None
+
+class Class(models.Model):
+    name = models.CharField(max_length=100) #full name
+    course_id = models.CharField(max_length=10) #CS 265
+    teacher = models.ForiegnKey(Class)
 
 
 class Reservation(models.Model):
     start_time = models.DateTimeField()
-    hours = models.IntegerField()
+    end_time = models.DateTimeField()
+    cur_class = models.ForiegnKey(Class, null=True,blank=True)
+    repeat = models.BooleanField(default = False)
+    description = models.CharField(max_length=1000, blank=True, null=True)
 
+    def Description(self):
+        if self.description != None and self.description != "":
+            return self.description
+        elif self.cur_class != None:
+            teacher = self.cur_class.teacher.FullName()
+            return "Occupied by "+teacher+"\nClass:"+self.cur_class.course_id 
+        else:
+            return ""
+
+
+
+
+
+
+    

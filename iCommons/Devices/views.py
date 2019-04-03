@@ -14,8 +14,9 @@ from django.core.mail import send_mail, EmailMultiAlternatives
 def reserve(request):
 
     if request.method == 'GET':
+        allowed_devices = GetAllowedDevices()
         context = {
-            "Devices": ["Laptop","Charger"],
+            "Devices": allowed_devices,
         }
         return render(request, 'reservedevice.html', context)
 
@@ -24,6 +25,7 @@ def reserve(request):
         time = int(str(request.POST['time']).split()[0])
 
         device = loanshark.GetRandomDeviceOfType(device_type)
+        loanshark.ReserveDevice(device)
 
         user = request.POST['user']
 
@@ -50,3 +52,7 @@ def send_email(user,subject,text):
 
 def notifySAs():
     print("")
+
+def GetAllowedDevices():
+    return ["Laptop","Charger"]
+    return loanshark.GetAllowedDevices()

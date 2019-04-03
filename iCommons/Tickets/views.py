@@ -7,6 +7,8 @@ from datetime import datetime
 from django.core.mail import send_mail, EmailMultiAlternatives
 from Users.models import User
 from iCommons import settings
+from django.core.signing import BadSignature
+from django.http import Http404
 
 
 # Create your views here.
@@ -35,3 +37,15 @@ def send_email(user,subject,text,email):
 def view_all(request):
     context = {}
     return render(request, 'viewtickets.html', context)
+
+def view_ticket(request, signed_pk):
+    try:
+      pk = Ticket.signer.unsign(signed_pk)
+      ticket = Ticket.objects.get(pk=pk)
+      context = {
+        "Ticket":ticket
+      }
+      return render(request, 'viewticket.html', context)
+
+    except (BadSignature, Ticket.DoesNotExist):
+      raise Http404('Invalid ticket.')

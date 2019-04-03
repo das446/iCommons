@@ -28,6 +28,7 @@ class User(AbstractUser):
     university_id = models.CharField(max_length=8, null = True, blank=True)
     major = models.CharField(max_length = 100, null = True, blank=True)
     advisor = models.ForeignKey('User',null = True, blank=True)
+    university_id = models.CharField(max_length=8, null=True, blank=True)
 
     #modified from allauth.ResetPasswordForm
     def send_password_reset_email(self):
@@ -68,11 +69,10 @@ class User(AbstractUser):
         url = '%s://%s' % (protocol, current_site.domain)
         if port:
             url += ':%s' % port
-
-        url = "http://127.0.0.1:8000"
-
         return settings.url
 
+    def FullName(self):
+        return self.first_name + " " + self.last_name
 
 
 class UserType(models.Model):

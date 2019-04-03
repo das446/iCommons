@@ -80,17 +80,11 @@
         <li class="nav-item">
             <a class="nav-link" href="https://drexel.edu/cci/">My CCI</a>
         </li>
-        
-        {% comment %} 
-        {% if not user.is_anonymous %}
-        <li class="nav-item">
-            <a class="nav-link" href="{% url 'users:account' %}">Account</a>
-        </li> 
-        {% endcomment %}
+
 
         {% if user.user_type.name == "SA" %}
         <li class="nav-item">
-            <a class="nav-link" href="{% url 'tickets:view' %}">View Tickets</a>
+            <a class="nav-link" href="{% url 'tickets:view_all' %}">View Tickets</a>
         </li>
         {% endif %}
 
