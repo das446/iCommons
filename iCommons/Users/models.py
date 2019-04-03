@@ -20,7 +20,7 @@ class User(AbstractUser):
     user_type = models.ForeignKey("UserType", default = 2)
     first_name = models.CharField(max_length=100, null = True, blank=True)
     last_name = models.CharField(max_length=100, null = True, blank=True)
-    email = models.CharField(max_length=100)
+    email = models.CharField(max_length=100, null = True, blank=True)
     phone_regex = RegexValidator(regex=r'^\d\d\d-\d\d\d-\d\d\d\d$',
                                  message="Phone number must be entered in the format: 'XXX-XXX-XXXX'.")
     phone_number = models.CharField(

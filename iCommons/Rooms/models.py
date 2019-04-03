@@ -27,13 +27,13 @@ class Room(models.Model):
 class Class(models.Model):
     name = models.CharField(max_length=100) #full name
     course_id = models.CharField(max_length=10) #CS 265
-    teacher = models.ForiegnKey(Class)
+    teacher = models.ForeignKey(User)
 
 
 class Reservation(models.Model):
-    start_time = models.DateTimeField()
-    end_time = models.DateTimeField()
-    cur_class = models.ForiegnKey(Class, null=True,blank=True)
+    start_time = models.DateTimeField(null=True, blank=True)
+    end_time = models.DateTimeField(null=True, blank=True)
+    cur_class = models.ForeignKey(Class, null=True,blank=True)
     repeat = models.BooleanField(default = False)
     description = models.CharField(max_length=1000, blank=True, null=True)
 
