@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    {% block css %}
+    
     <!-- Latest compiled and minified Bootstrap 4 Alpha 4 CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
@@ -20,7 +20,7 @@
 
     <link href="{% static 'css/base.css' %}" rel="stylesheet">
 
-
+    {% block css %}
     {% endblock %}
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -64,7 +64,7 @@
 
     <!-- NAVBAR
 ================================================== -->
-    <nav class="nav nav-fill" style="background-color: #FFC600;">
+    <nav class="nav nav-fill" style="background-color: #07294D;">
         <span class="border border-dark"></span>
         <li class="nav-item">
             <a class="nav-link" href="{% url 'home' %}">Home</a>
@@ -108,7 +108,7 @@
 
     <!-- FOOTER
 ================================================== -->
-    <div class="footer py-1" style="background-color:#FFC600;" align="bottom">
+    <div class="footer py-1">
         <h4>Drexel University, 3141 Chestnut Street, Philadelphia, PA 19104, 215.895.2000</h4>
     </div>
 </body>

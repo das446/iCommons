@@ -1,5 +1,9 @@
 {% extends "base.html" %} {% load static %}
 
+{% block css %}
+<link href="{% static 'css/home.css' %}" rel="stylesheet">
+{% endblock css %}
+
 {% block content %}
 <!-- SIGN IN
 ================================================== -->
@@ -7,7 +11,7 @@
   <div class="row w-100 align-items-center">
     <!-- Left Column -->
     <div class="col-md-4 mt-3 mb-4 h-75">
-      <div class="img-thumbnail" style="background-color: #07294D; color:#FFC600;">
+      <div class="img-thumbnail" style="background-color: #07294D; color:white;">
         <h1 class="text-center"> Occupied Rooms </h1>
         <hr style="background-color: white; color:white;" />
         <div class="container overflow-auto" style="height:500px">
