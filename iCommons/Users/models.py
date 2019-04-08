@@ -71,7 +71,8 @@ class User(AbstractUser):
             url += ':%s' % port
         return settings.url
 
-    def FullName(self):
+    @property
+    def full_name(self):
         return self.first_name + " " + self.last_name
 
 
