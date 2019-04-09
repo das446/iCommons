@@ -9,28 +9,22 @@ import datetime
 
 
 def home(request):
-    occupied_rooms = GetOccupiedRooms()
-    available_rooms = GetAvailableRooms()
+    rooms = OrganizeRooms()
     context = {
-        "available_rooms":available_rooms,
-        "occupied_rooms":occupied_rooms
+        "available_rooms":rooms[0],
+        "occupied_rooms":rooms[1]
     }
     return render(request, 'home.html', context)
 
-def GetOccupiedRooms():
-    occupied_rooms = []
-    rooms = Room.objects.all()
-    current_time = datetime.datetime.now
-    for room in rooms:
-        #if room.GetClass(current_time) is not None:
-        occupied_rooms.append(room)
-    return occupied_rooms
+def OrganizeRooms():
 
-def GetAvailableRooms():
-    available_rooms = []
+    organized_rooms = [[],[]] #available,unavailable
     rooms = Room.objects.all()
     current_time = datetime.datetime.now
     for room in rooms:
         if room.Available(current_time):
-            available_rooms.append(room)
-    return available_rooms
+            organized_rooms[0].append(room)
+        else:
+            organized_rooms[1].append(room)
+
+    return organized_rooms

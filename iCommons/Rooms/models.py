@@ -60,7 +60,7 @@ class Reservation(models.Model):
     end_time = models.DateTimeField(null=True, blank=True)
     cur_class = models.ForeignKey(Class, null=True,blank=True)
     repeat = models.BooleanField(default = False)
-    repeat_weeks = models.IntegerField(default=1)
+    repeat_weeks = models.IntegerField(default=0)
     description = models.CharField(max_length=1000, blank=True, null=True)
 
     def Description(self):
@@ -74,18 +74,29 @@ class Reservation(models.Model):
     
     def save(self, *args, **kwargs):
         super(Reservation,self).save(*args, **kwargs)
-        #if self.repeat:
+        if self.repeat:
+            self.CreateRepeatingReservation(self.repeat_weeks)
+
+    def CreateRepeatingReservation(self,weeks):
+        for i in range(1,weeks+1):
+            start = self.start_time + datetime.timedelta(days=7*i)
+            end = self.end_time + datetime.timedelta(days=7*i)
+            Reservation.objects.create(start_time=start,end_time=end,cur_class=self.cur_class,description=self.description,repeat=False)
 
     def __str__(self):
         return self.Description() +" "+ str(self.start_time) + " to " + str(self.end_time)
 
-
+#todo, make this work for different days
+#python is annoying sometimes when it makes you have to guess what type of object is being passed in
 def is_time_between(begin_time, end_time, check_time):
-    if begin_time < end_time:
-        return check_time >= begin_time and check_time <= end_time
+    begin = begin_time()
+    end = end_time()
+    check = check_time().time()
+    print("check="+str(check)+", begin="+str(begin)+", end="+str(end))
+    if begin < end:
+        return check >= begin and check <= end
     else: # crosses midnight
-        return check_time >= begin_time or check_time <= end_time
-
+        return check >= begin or check <= end
 
 
 

@@ -23,8 +23,7 @@
 
           {% for room in occupied_rooms %}
           <h4> Room: {{ room }}</h4>
-          <h4> Occupied By: {{ room.TestClass.teacher.FullName }} test </h4>
-          <h4> Class: {{ room.TestClass }} test</h4>
+          <h4> Class: {{ room.CurClass }}</h4>
           <hr style="background-color: white; color:white;" />
           {% endfor %}
         </div>
