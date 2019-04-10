@@ -5,6 +5,9 @@ from django.db import models
 
 from Users.models import User
 import datetime
+import pytz
+
+utc=pytz.UTC
 
 # Create your models here.
 
@@ -21,7 +24,7 @@ class Room(models.Model):
 
     def CurReservation(self,time):
         for reservation in self.reservations.all():
-            if is_time_between(reservation.start_time.time, reservation.end_time.time, time):
+            if is_datetime_between(reservation.start_time, reservation.end_time, time):
                 return reservation
         return None
 
@@ -88,15 +91,11 @@ class Reservation(models.Model):
 
 #todo, make this work for different days
 #python is annoying sometimes when it makes you have to guess what type of object is being passed in
-def is_time_between(begin_time, end_time, check_time):
-    begin = begin_time()
-    end = end_time()
-    check = check_time().time()
-    print("check="+str(check)+", begin="+str(begin)+", end="+str(end))
-    if begin < end:
-        return check >= begin and check <= end
-    else: # crosses midnight
-        return check >= begin or check <= end
+def is_datetime_between(begin_time, end_time, check_time):
+    begin_time = begin_time.replace(tzinfo=utc)
+    end_time = end_time.replace(tzinfo=utc)
+    check_time = check_time.replace(tzinfo=utc)
+    return begin_time < check_time < end_time
 
 
 
