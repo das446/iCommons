@@ -39,7 +39,7 @@ def reserve(request):
         #Send confirmation email to user
 
         send_email(user,"Device Reservation Confirmation",context["Message"])
-        notifySAs()
+        send_email_to_SA(user,device)
 
         return render(request, 'confirm.html', context)
 
@@ -47,11 +47,13 @@ def reserve(request):
 def send_email(user,subject,text):
     from_email = settings.ihelp_email
     to_email = user + "@drexel.edu"
-    print("from:" + from_email)
     send_mail(subject, text,from_email, [to_email], fail_silently=False) 
 
-def notifySAs():
-    print("")
+def send_email_to_SA(user,device):
+    from_email = settings.ihelp_email
+    to_email = user + "@drexel.edu"
+    print("from:" + from_email)
+    send_mail(subject, text,from_email, [to_email], fail_silently=False) 
 
 def GetAllowedDevices():
     return ["Laptop","Charger"]
