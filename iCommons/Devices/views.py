@@ -50,9 +50,10 @@ def send_email(user,subject,text):
     send_mail(subject, text,from_email, [to_email], fail_silently=False) 
 
 def send_email_to_SA(user,device):
-    from_email = settings.ihelp_email
-    to_email = user + "@drexel.edu"
-    print("from:" + from_email)
+    from_email = user + "@drexel.edu"
+    to_email = settings.ihelp_email
+    subject =  "Device "+device+" Reservation"
+    text = " Device "+device+" has been reserved by "+user
     send_mail(subject, text,from_email, [to_email], fail_silently=False) 
 
 def GetAllowedDevices():
