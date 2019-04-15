@@ -145,7 +145,7 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = (
-   '/var/webapps/iCommons'
+   'iCommons/static'
 )
 
 LOGIN_REDIRECT_URL = '/'
