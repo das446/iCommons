@@ -66,6 +66,7 @@ class Reservation(models.Model):
     repeat = models.BooleanField(default = False)
     repeat_weeks = models.IntegerField(default=0)
     description = models.CharField(max_length=1000, blank=True, null=True)
+    reserved_room = models.ForeignKey("Room",null=True, blank=True)
 
     def Description(self):
         if self.description != None and self.description != "":
@@ -79,13 +80,15 @@ class Reservation(models.Model):
     def save(self, *args, **kwargs):
         super(Reservation,self).save(*args, **kwargs)
         if self.repeat:
-            self.CreateRepeatingReservation(self.repeat_weeks)
+            self.CreateRepeatingReservation(self.repeat_weeks, self.reserved_room)
 
-    def CreateRepeatingReservation(self,weeks):
+    def CreateRepeatingReservation(self, weeks, room):
         for i in range(1,weeks+1):
             start = self.start_time + datetime.timedelta(days=7*i)
             end = self.end_time + datetime.timedelta(days=7*i)
-            Reservation.objects.create(start_time=start,end_time=end,cur_class=self.cur_class,description=self.description,repeat=False)
+            r = Reservation(start_time=start, end_time=end,cur_class=self.cur_class, description=self.description,repeat=False, reserved_room=room)
+            r.save()
+            room.reservations.add(r)
 
     def __str__(self):
         return self.Description() +" "+ str(self.start_time) + " to " + str(self.end_time)

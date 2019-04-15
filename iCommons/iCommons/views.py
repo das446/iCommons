@@ -14,7 +14,7 @@ utc=pytz.UTC
 
 def home(request):
     rooms = OrganizeRooms()
-    img = GetCenterImage()
+    #img = GetCenterImage()
     context = {
         "available_rooms":rooms[0],
         "occupied_rooms":rooms[1]
