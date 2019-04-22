@@ -1,19 +1,19 @@
 import requests
+import json
 
 def GetFbImage():
 
-    access_token = "EAAIiV84yj4EBANSIquE2k3HNwMv5lDrWEDwfo9ZCqHkLPZBCdlN4CRN9UZAQFDStRPlH4rOz1aIdHzjmBtrL35gniZBu2WaKGZA5mmbblgQ4nUrYj8RjQax5MTXadmjKXB8p8bPkjzOPzuCd6FPRkZBLQEZByha2dgy8VVTThCdZA84lyqNZBRp7L4wtXoKVHD0AZD"
+    access_token = "EAAIiV84yj4EBAG97LEft6l7wn91Y9CNeduBfekjiEAL2RE398urEoL4uuZAIg7yHYYrk3WDgPpc2cedml9F2ssLfuzkCwygYkHXbP7dA2CGIHZAQjrfpmKnS0xcNCfFJpLND0EFQexA33h4R37ZA3KfFRNnmxoZD"
 
-    URL = "https://graph.facebook.com/drexelcci/albums?access_token={}".format(access_token)
+    album_id="142767529186546"
+    URL = "https://graph.facebook.com/drexelcci?fields=albums{photos{images}}&access_token="+access_token
     r = requests.get(url = URL)
     data = r.json() 
-    album_id = data['data'][0]['id']
-    print(album_id)
-    URL="https://graph.facebook.com/" + album_id + "/photos?fields=picture&access_token=EAAIiV84yj4EBANSIquE2k3HNwMv5lDrWEDwfo9ZCqHkLPZBCdlN4CRN9UZAQFDStRPlH4rOz1aIdHzjmBtrL35gniZBu2WaKGZA5mmbblgQ4nUrYj8RjQax5MTXadmjKXB8p8bPkjzOPzuCd6FPRkZBLQEZByha2dgy8VVTThCdZA84lyqNZBRp7L4wtXoKVHD0AZD"
-    r = requests.get(url = URL)
-    data = r.json() 
-
-    print(data)
-    return data
-
-#GetFbImage()
+    image = data['albums']['data'][0]['photos']['data'][0]['images'][0]
+    img = {
+        "url": image['source'],
+        "width" : image['width'],
+        "height" : image['height']
+    }
+    print(img)
+    return img

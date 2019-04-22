@@ -17,7 +17,8 @@ def home(request):
     #img = GetCenterImage()
     context = {
         "available_rooms":rooms[0],
-        "occupied_rooms":rooms[1]
+        "occupied_rooms":rooms[1],
+        "image":fb.GetFbImage()
     }
     return render(request, 'home.html', context)
 
