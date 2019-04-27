@@ -18,19 +18,16 @@ def create(request):
         return render(request, 'createticket.html', context)
 
     else :
-        username = request.user.username
         subject = request.POST['subject']
         text = request.POST['text']
         email = request.POST['email']
         time = datetime.now()
-        user = User.objects.get(username=username)
-        Ticket.objects.create(requester=user, subject=subject, text=text, creation_date=time, status = "new")
-        send_email(user,subject,text,email)
+        Ticket.objects.create(requester=email, subject=subject, text=text, creation_date=time, status = "new")
+        send_email(email,subject,text,email)
         return render(request, 'confirm.html')
 
-def send_email(user,subject,text,email):
+def send_email(from_email,subject,text,email):
     to_email = settings.ihelp_email
-    from_email = user.email
     print("from:" + from_email)
     send_mail(subject, text,from_email, [to_email], fail_silently=False) 
 

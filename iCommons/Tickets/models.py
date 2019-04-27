@@ -16,7 +16,7 @@ class Ticket(models.Model):
 
     signer = Signer(sep='/', salt='ticket.Ticket')
 
-    requester = models.ForeignKey(User)
+    requester = models.CharField(max_length=100, null = True, blank=True)
     subject = models.CharField(max_length=100, null=True)
     text = models.CharField(max_length=1000, null=True)
     creation_date = models.DateTimeField()
