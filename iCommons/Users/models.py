@@ -9,7 +9,7 @@ from allauth.utils import build_absolute_uri
 from allauth.account.utils import user_pk_to_url_str
 from django.core.validators import RegexValidator
 from django.core.mail import send_mail, EmailMultiAlternatives
-from iCommons import settings
+from iCommons import settings, develop
 from django.urls import reverse
 from django.contrib.sites.models import Site
 #from .helpers import UserCreationForm
@@ -69,7 +69,7 @@ class User(AbstractUser):
         url = '%s://%s' % (protocol, current_site.domain)
         if port:
             url += ':%s' % port
-        return settings.url
+        return develop.url
 
     @property
     def full_name(self):
