@@ -1,0 +1,53 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Client Side Test Cases 1-9,Chrome 73.0.3683.103,Client Side Test Cases,,2019-04-26 21:19:20,2019-04-26 21:20:03,42.135s,PASSED
+,,,,,,,
+Test Cases/Load Homepage,Chrome 73.0.3683.103,User visits homepage of iCommons Webapp.,T7.2.1,2019-04-26 21:19:21,2019-04-26 21:19:28,7.730s,PASSED
+"openBrowser(""http://rack113.cs.drexel.edu/"")",Chrome 73.0.3683.103,"User opens a web browser and navigates to http://rack113.cs.drexel.edu/
+
+User is presented with a functional homepage for the iCommons App
+CCI logo caption is present on the page.
+A list of occupied rooms are displayed on the page.
+A list of available rooms are displayed on the page.
+User is allowed to scroll when viewing the list of occupied rooms.
+Middle section of the page consists of a CCI photo and caption that the Administrator changes.
+Site footer is displayed at the bottom of the screen.
+Advanced Search button is located at the bottom of the screen.
+User is able to view background image.
+",,2019-04-26 21:19:21,2019-04-26 21:19:26,5.227s,PASSED
+waitForPageLoad(6),Chrome 73.0.3683.103,User waits for page to load,,2019-04-26 21:19:26,2019-04-26 21:19:26,0.079s,PASSED
+delay(2),Chrome 73.0.3683.103,,,2019-04-26 21:19:26,2019-04-26 21:19:28,2.030s,PASSED
+,,,,,,,
+Test Cases/CCI Logo Redirect,Chrome 73.0.3683.103,"Upon clicking the CCI logo, the user is redirected to Drexel’s website.",T7.2.2,2019-04-26 21:19:28,2019-04-26 21:19:35,6.125s,PASSED
+"click(findTestObject(""CCI Logo""))",Chrome 73.0.3683.103,"User clicks on CCI logo in the top left corner of the page.
+",,2019-04-26 21:19:29,2019-04-26 21:19:30,1.114s,PASSED
+waitForPageLoad(30),Chrome 73.0.3683.103,User is redirected to Drexel’s website.,,2019-04-26 21:19:30,2019-04-26 21:19:30,0.034s,PASSED
+delay(3),Chrome 73.0.3683.103,,,2019-04-26 21:19:30,2019-04-26 21:19:33,3.004s,PASSED
+back(),Chrome 73.0.3683.103,User returns to the homepage.,,2019-04-26 21:19:33,2019-04-26 21:19:35,1.755s,PASSED
+waitForPageLoad(5),Chrome 73.0.3683.103,,,2019-04-26 21:19:35,2019-04-26 21:19:35,0.017s,PASSED
+,,,,,,,
+Test Cases/Reserve Room Link,Chrome 73.0.3683.103,"Upon clicking the Reserve Room link on the toolbar, the user the user is redirected to a page to reserve a conference room.",T7.2.4a,2019-04-26 21:19:35,2019-04-26 21:19:43,8.656s,PASSED
+"click(findTestObject(""Resource Reservation option""))",Chrome 73.0.3683.103,User clicks the Resource Reservation option.,,2019-04-26 21:19:35,2019-04-26 21:19:35,0.076s,PASSED
+delay(1),Chrome 73.0.3683.103,,,2019-04-26 21:19:35,2019-04-26 21:19:36,1.002s,PASSED
+"click(findTestObject(""Room Reservation link""))",Chrome 73.0.3683.103,User clicks on the Reserve Room link.,,2019-04-26 21:19:36,2019-04-26 21:19:36,0.366s,PASSED
+delay(3),Chrome 73.0.3683.103,User is redirected to a page to reserve a conference room.,,2019-04-26 21:19:36,2019-04-26 21:19:39,3.002s,PASSED
+waitForAlert(4),Chrome 73.0.3683.103,,,2019-04-26 21:19:39,2019-04-26 21:19:43,4.046s,PASSED
+,,,,,,,
+Test Cases/Reserve Equipment Link,Chrome 73.0.3683.103,"Upon clicking the Reserve Equipment link on the toolbar, the user is redirected to a page to reserve equipment.",T7.2.4b,2019-04-26 21:19:43,2019-04-26 21:19:48,4.637s,PASSED
+"click(findTestObject(""Resource Reservation option""))",Chrome 73.0.3683.103,User clicks on the Resource Reservation option on the toolbar.,,2019-04-26 21:19:43,2019-04-26 21:19:43,0.058s,PASSED
+delay(1),Chrome 73.0.3683.103,,,2019-04-26 21:19:43,2019-04-26 21:19:44,1.008s,PASSED
+"click(findTestObject(""Equipment Reservation link""))",Chrome 73.0.3683.103,User clicks on the Reserve Equipment link in the submenu. ,,2019-04-26 21:19:44,2019-04-26 21:19:45,0.389s,PASSED
+waitForPageLoad(5),Chrome 73.0.3683.103,The Reserve Equipment page loads.,,2019-04-26 21:19:45,2019-04-26 21:19:45,0.023s,PASSED
+delay(3),Chrome 73.0.3683.103,,,2019-04-26 21:19:45,2019-04-26 21:19:48,3.003s,PASSED
+,,,,,,,
+Test Cases/Home Link Redirect,Chrome 73.0.3683.103,"Upon clicking the home link on the toolbar, the user is redirected to the homepage of the iCommons app.",T7.2.3,2019-04-26 21:19:48,2019-04-26 21:19:52,3.841s,PASSED
+"click(findTestObject(""Home link""))",Chrome 73.0.3683.103,User clicks on the Home link on the toolbar.,,2019-04-26 21:19:48,2019-04-26 21:19:50,1.685s,PASSED
+waitForPageLoad(6),Chrome 73.0.3683.103,User is redirected the homepage of the iCommons app.,,2019-04-26 21:19:50,2019-04-26 21:19:50,0.012s,PASSED
+delay(2),Chrome 73.0.3683.103,,,2019-04-26 21:19:50,2019-04-26 21:19:52,2.001s,PASSED
+,,,,,,,
+Test Cases/My CCI Redirect,Chrome 73.0.3683.103,"Upon clicking the My CCI link on the toolbar, the user is redirected to Drexel’s CCI website.",T7.2.5,2019-04-26 21:19:52,2019-04-26 21:20:02,10.116s,PASSED
+"click(findTestObject(""My CCI link""))",Chrome 73.0.3683.103,,,2019-04-26 21:19:52,2019-04-26 21:19:54,2.115s,PASSED
+waitForPageLoad(8),Chrome 73.0.3683.103,,,2019-04-26 21:19:54,2019-04-26 21:19:54,0.012s,PASSED
+delay(3),Chrome 73.0.3683.103,,,2019-04-26 21:19:54,2019-04-26 21:19:57,3.001s,PASSED
+back(),Chrome 73.0.3683.103,,,2019-04-26 21:19:57,2019-04-26 21:19:59,1.801s,PASSED
+waitForPageLoad(5),Chrome 73.0.3683.103,,,2019-04-26 21:19:59,2019-04-26 21:19:59,0.013s,PASSED
+delay(3),Chrome 73.0.3683.103,,,2019-04-26 21:19:59,2019-04-26 21:20:02,3.002s,PASSED

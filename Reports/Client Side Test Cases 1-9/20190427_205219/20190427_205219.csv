@@ -1,0 +1,5 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Client Side Test Cases 1-9,,Client Side Test Cases,,2019-04-27 20:52:22,2019-04-27 20:52:23,1.042s,FAILED
+,,,,,,,
+Test Cases/iCommons Site/Submit Tickets View,,This page contains a list of all submitted tickets through the site.,T7.2.9,2019-04-27 20:52:22,2019-04-27 20:52:23,0.732s,FAILED
+"navigateToUrl(""http://rack113.cs.drexel.edu/admin"")",,,,2019-04-27 20:52:22,2019-04-27 20:52:23,0.332s,FAILED

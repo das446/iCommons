@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Upon clicking the My CCI link on the toolbar, the user is redirected to Drexel’s CCI website.</description>
+   <name>My CCI Redirect</name>
+   <tag>T7.2.5</tag>
+   <comment></comment>
+   <testCaseGuid>b4c7153f-53f6-4e39-bac6-63690c3ea74e</testCaseGuid>
+</TestCaseEntity>

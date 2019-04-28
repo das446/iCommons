@@ -1,0 +1,30 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Client Side Test Cases 1-9,Chrome 73.0.3683.103,Client Side Test Cases,,2019-04-26 15:28:27,2019-04-26 15:28:44,16.565s,PASSED
+,,,,,,,
+Test Cases/Load Homepage,Chrome 73.0.3683.103,User visits homepage of iCommons Webapp.,T7.2.1,2019-04-26 15:28:27,2019-04-26 15:28:34,6.943s,PASSED
+"openBrowser(""http://rack113.cs.drexel.edu/"")",Chrome 73.0.3683.103,"User opens a web browser and navigates to http://rack113.cs.drexel.edu/
+
+User is presented with a functional homepage for the iCommons App
+CCI logo caption is present on the page.
+A list of occupied rooms are displayed on the page.
+A list of available rooms are displayed on the page.
+User is allowed to scroll when viewing the list of occupied rooms.
+Middle section of the page consists of a CCI photo and caption that the Administrator changes.
+Site footer is displayed at the bottom of the screen.
+Advanced Search button is located at the bottom of the screen.
+User is able to view background image.
+",,2019-04-26 15:28:28,2019-04-26 15:28:32,4.452s,PASSED
+waitForPageLoad(6),Chrome 73.0.3683.103,User waits for page to load,,2019-04-26 15:28:32,2019-04-26 15:28:32,0.075s,PASSED
+waitForAlert(2),Chrome 73.0.3683.103,,,2019-04-26 15:28:32,2019-04-26 15:28:34,2.049s,PASSED
+,,,,,,,
+Test Cases/CCI Logo Redirect,Chrome 73.0.3683.103,"Upon clicking the CCI logo, the user is redirected to Drexel’s website.",T7.2.2,2019-04-26 15:28:34,2019-04-26 15:28:39,4.644s,PASSED
+"click(findTestObject(""CCI Logo""))",Chrome 73.0.3683.103,"User clicks on CCI logo in the top left corner of the page.
+",,2019-04-26 15:28:34,2019-04-26 15:28:36,1.425s,PASSED
+waitForPageLoad(30),Chrome 73.0.3683.103,User is redirected to Drexel’s website.,,2019-04-26 15:28:36,2019-04-26 15:28:36,0.015s,PASSED
+waitForAlert(3),Chrome 73.0.3683.103,,,2019-04-26 15:28:36,2019-04-26 15:28:39,3.030s,PASSED
+,,,,,,,
+Test Cases/Home Link Redirect,Chrome 73.0.3683.103,"Upon clicking the home link on the toolbar, the user is redirected to the homepage of the iCommons app.",7.2.3,2019-04-26 15:28:39,2019-04-26 15:28:43,3.999s,PASSED
+back(),Chrome 73.0.3683.103,User presses the browser back button.,,2019-04-26 15:28:39,2019-04-26 15:28:41,1.918s,PASSED
+waitForPageLoad(6),Chrome 73.0.3683.103,User returns to the homepage.,,2019-04-26 15:28:41,2019-04-26 15:28:41,0.021s,PASSED
+"click(findTestObject(""Home link""))",Chrome 73.0.3683.103,User clicks on the Home link on the toolbar.,,2019-04-26 15:28:41,2019-04-26 15:28:43,1.846s,PASSED
+waitForPageLoad(6),Chrome 73.0.3683.103,User is redirected the homepage of the iCommons app.,,2019-04-26 15:28:43,2019-04-26 15:28:43,0.014s,PASSED

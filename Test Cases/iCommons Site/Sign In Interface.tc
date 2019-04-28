@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Upon clicking the Sign In link on the toolbar, the user is provided with a sign in interface containing username and password fields.</description>
+   <name>Sign In Interface</name>
+   <tag>T7.2.6</tag>
+   <comment></comment>
+   <testCaseGuid>f7ffbc43-71a9-49cc-bbc4-bc22687ae635</testCaseGuid>
+</TestCaseEntity>
