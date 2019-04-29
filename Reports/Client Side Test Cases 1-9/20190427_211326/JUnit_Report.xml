@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Client Side Test Cases 1-9" time="87" tests="10" failures="0" errors="0">
+   <testsuite name="Client Side Test Cases 1-9" tests="10" failures="0" errors="0" time="87" timestamp="2019-04-27 21:13:27" hostname="Joseph - Joseph-PC" id="Test Suites/Client Side Test Cases 1-9">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Joseph\\git\\iCommons\\Reports\\Client Side Test Cases 1-9\\20190427_211326"/>
+         <property name="logFiles" value="C:\\Users\\Joseph\\git\\iCommons\\Reports\\Client Side Test Cases 1-9\\20190427_211326\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Joseph - Joseph-PC"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="6.1.2.2"/>
+         <property name="browser" value="Chrome 73.0.3683.103"/>
+         <property name="hostAddress" value="192.168.1.65"/>
+         <property name="sessionId" value="273bba64870eb49059bb22d33ef1c4d3"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/iCommons Site/Load Homepage" classname="Test Cases/iCommons Site/Load Homepage" status="PASSED">
+         <system-out><![CDATA[2019-04-27 21:13:28 - [TEST_CASE][PASSED] - Test Cases/iCommons Site/Load Homepage: Test Cases/iCommons Site/Load Homepage
+
+2019-04-27 21:13:28 - [TEST_STEP][PASSED] - openBrowser("http://rack113.cs.drexel.edu/"): Browser is opened with url: 'http://rack113.cs.drexel.edu/'
+
+2019-04-27 21:13:28 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-04-27 21:13:28 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-04-27 21:13:32 - [MESSAGE][PASSED] - Browser is opened with url: 'http://rack113.cs.drexel.edu/'
+
+2019-04-27 21:13:32 - [TEST_STEP][PASSED] - waitForPageLoad(6): Wait for page load successfully
+
+2019-04-27 21:13:32 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-27 21:13:32 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-27 21:13:35 - [MESSAGE][PASSED] - Delayed 3 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/iCommons Site/CCI Logo Redirect" classname="Test Cases/iCommons Site/CCI Logo Redirect" status="PASSED">
+         <system-out><![CDATA[2019-04-27 21:13:35 - [TEST_CASE][PASSED] - Test Cases/iCommons Site/CCI Logo Redirect: Test Cases/iCommons Site/CCI Logo Redirect
+
+2019-04-27 21:13:35 - [TEST_STEP][PASSED] - click(findTestObject("CCI Logo")): Object: 'Object Repository/CCI Logo' is clicked on
+
+2019-04-27 21:13:37 - [MESSAGE][PASSED] - Object: 'Object Repository/CCI Logo' is clicked on
+
+2019-04-27 21:13:37 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+2019-04-27 21:13:37 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-27 21:13:37 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-27 21:13:40 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-27 21:13:40 - [TEST_STEP][PASSED] - back(): Navigate back successfully
+
+2019-04-27 21:13:42 - [MESSAGE][PASSED] - Navigate back successfully
+
+2019-04-27 21:13:42 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-04-27 21:13:42 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-27 21:13:42 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-04-27 21:13:44 - [MESSAGE][PASSED] - Delayed 2 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/iCommons Site/Reserve Room Link" classname="Test Cases/iCommons Site/Reserve Room Link" status="PASSED">
+         <system-out><![CDATA[2019-04-27 21:13:44 - [TEST_CASE][PASSED] - Test Cases/iCommons Site/Reserve Room Link: Test Cases/iCommons Site/Reserve Room Link
+
+2019-04-27 21:13:44 - [TEST_STEP][PASSED] - click(findTestObject("Resource Reservation option")): Object: 'Object Repository/Resource Reservation option' is clicked on
+
+2019-04-27 21:13:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Resource Reservation option' is clicked on
+
+2019-04-27 21:13:44 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-04-27 21:13:45 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-04-27 21:13:45 - [TEST_STEP][PASSED] - click(findTestObject("Room Reservation link")): Object: 'Object Repository/Room Reservation link' is clicked on
+
+2019-04-27 21:13:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Room Reservation link' is clicked on
+
+2019-04-27 21:13:45 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-27 21:13:48 - [MESSAGE][PASSED] - Delayed 3 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/iCommons Site/Reserve Equipment Link" classname="Test Cases/iCommons Site/Reserve Equipment Link" status="PASSED">
+         <system-out><![CDATA[2019-04-27 21:13:48 - [TEST_CASE][PASSED] - Test Cases/iCommons Site/Reserve Equipment Link: Test Cases/iCommons Site/Reserve Equipment Link
+
+2019-04-27 21:13:49 - [TEST_STEP][PASSED] - click(findTestObject("Resource Reservation option")): Object: 'Object Repository/Resource Reservation option' is clicked on
+
+2019-04-27 21:13:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Resource Reservation option' is clicked on
+
+2019-04-27 21:13:49 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-04-27 21:13:51 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-04-27 21:13:51 - [TEST_STEP][PASSED] - click(findTestObject("Equipment Reservation link")): Object: 'Object Repository/Equipment Reservation link' is clicked on
+
+2019-04-27 21:13:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Equipment Reservation link' is clicked on
+
+2019-04-27 21:13:51 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-04-27 21:13:51 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-27 21:13:51 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-27 21:13:54 - [MESSAGE][PASSED] - Delayed 3 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/iCommons Site/Home Link Redirect" classname="Test Cases/iCommons Site/Home Link Redirect" status="PASSED">
+         <system-out><![CDATA[2019-04-27 21:13:54 - [TEST_CASE][PASSED] - Test Cases/iCommons Site/Home Link Redirect: Test Cases/iCommons Site/Home Link Redirect
+
+2019-04-27 21:13:54 - [TEST_STEP][PASSED] - click(findTestObject("Home link")): Object: 'Object Repository/Home link' is clicked on
+
+2019-04-27 21:13:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Home link' is clicked on
+
+2019-04-27 21:13:56 - [TEST_STEP][PASSED] - waitForPageLoad(6): Wait for page load successfully
+
+2019-04-27 21:13:56 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-27 21:13:56 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-04-27 21:13:58 - [MESSAGE][PASSED] - Delayed 2 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/iCommons Site/My CCI Redirect" classname="Test Cases/iCommons Site/My CCI Redirect" status="PASSED">
+         <system-out><![CDATA[2019-04-27 21:13:58 - [TEST_CASE][PASSED] - Test Cases/iCommons Site/My CCI Redirect: Test Cases/iCommons Site/My CCI Redirect
+
+2019-04-27 21:13:58 - [TEST_STEP][PASSED] - click(findTestObject("My CCI link")): Object: 'Object Repository/My CCI link' is clicked on
+
+2019-04-27 21:13:59 - [MESSAGE][PASSED] - Object: 'Object Repository/My CCI link' is clicked on
+
+2019-04-27 21:13:59 - [TEST_STEP][PASSED] - waitForPageLoad(8): Wait for page load successfully
+
+2019-04-27 21:13:59 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-27 21:13:59 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-27 21:14:02 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-27 21:14:02 - [TEST_STEP][PASSED] - back(): Navigate back successfully
+
+2019-04-27 21:14:04 - [MESSAGE][PASSED] - Navigate back successfully
+
+2019-04-27 21:14:04 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-04-27 21:14:04 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-27 21:14:04 - [TEST_STEP][PASSED] - delay(4): Delayed 4 second(s)
+
+2019-04-27 21:14:08 - [MESSAGE][PASSED] - Delayed 4 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/iCommons Site/Sign In Interface" classname="Test Cases/iCommons Site/Sign In Interface" status="PASSED">
+         <system-out><![CDATA[2019-04-27 21:14:08 - [TEST_CASE][PASSED] - Test Cases/iCommons Site/Sign In Interface: Test Cases/iCommons Site/Sign In Interface
+
+2019-04-27 21:14:08 - [TEST_STEP][PASSED] - click(findTestObject("Sign In link")): Object: 'Object Repository/Sign In link' is clicked on
+
+2019-04-27 21:14:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Sign In link' is clicked on
+
+2019-04-27 21:14:09 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-04-27 21:14:09 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-27 21:14:09 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-04-27 21:14:11 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-04-27 21:14:11 - [TEST_STEP][PASSED] - click(findTestObject("Username field")): Object: 'Object Repository/Username field' is clicked on
+
+2019-04-27 21:14:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Username field' is clicked on
+
+2019-04-27 21:14:11 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-04-27 21:14:12 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-04-27 21:14:12 - [TEST_STEP][PASSED] - setText(findTestObject("Username field"), "test"): Text 'test' is set on object 'Object Repository/Username field'
+
+2019-04-27 21:14:12 - [MESSAGE][PASSED] - Text 'test' is set on object 'Object Repository/Username field'
+
+2019-04-27 21:14:12 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-04-27 21:14:13 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-04-27 21:14:13 - [TEST_STEP][PASSED] - click(findTestObject("Password field")): Object: 'Object Repository/Password field' is clicked on
+
+2019-04-27 21:14:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Password field' is clicked on
+
+2019-04-27 21:14:13 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-04-27 21:14:14 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-04-27 21:14:14 - [TEST_STEP][PASSED] - setText(findTestObject("Password field"), "test"): Text 'test' is set on object 'Object Repository/Password field'
+
+2019-04-27 21:14:14 - [MESSAGE][PASSED] - Text 'test' is set on object 'Object Repository/Password field'
+
+2019-04-27 21:14:14 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-04-27 21:14:15 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-04-27 21:14:15 - [TEST_STEP][PASSED] - click(findTestObject("Sign In button")): Object: 'Object Repository/Sign In button' is clicked on
+
+2019-04-27 21:14:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Sign In button' is clicked on
+
+2019-04-27 21:14:16 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-04-27 21:14:16 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-27 21:14:16 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-27 21:14:19 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-27 21:14:19 - [TEST_STEP][PASSED] - click(findTestObject("Username field")): Object: 'Object Repository/Username field' is clicked on
+
+2019-04-27 21:14:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Username field' is clicked on
+
+2019-04-27 21:14:19 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-04-27 21:14:20 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-04-27 21:14:20 - [TEST_STEP][PASSED] - setText(findTestObject("Username field"), "jtp53"): Text 'jtp53' is set on object 'Object Repository/Username field'
+
+2019-04-27 21:14:20 - [MESSAGE][PASSED] - Text 'jtp53' is set on object 'Object Repository/Username field'
+
+2019-04-27 21:14:20 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-04-27 21:14:21 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-04-27 21:14:21 - [TEST_STEP][PASSED] - click(findTestObject("Password field")): Object: 'Object Repository/Password field' is clicked on
+
+2019-04-27 21:14:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Password field' is clicked on
+
+2019-04-27 21:14:21 - [TEST_STEP][PASSED] - setText(findTestObject("Password field"), "testone23"): Text 'testone23' is set on object 'Object Repository/Password field'
+
+2019-04-27 21:14:21 - [MESSAGE][PASSED] - Text 'testone23' is set on object 'Object Repository/Password field'
+
+2019-04-27 21:14:21 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-04-27 21:14:22 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-04-27 21:14:22 - [TEST_STEP][PASSED] - click(findTestObject("Sign In button")): Object: 'Object Repository/Sign In button' is clicked on
+
+2019-04-27 21:14:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Sign In button' is clicked on
+
+2019-04-27 21:14:24 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-04-27 21:14:24 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-27 21:14:24 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-27 21:14:27 - [MESSAGE][PASSED] - Delayed 3 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/iCommons Site/Admin Sign In Interface" classname="Test Cases/iCommons Site/Admin Sign In Interface" status="PASSED">
+         <system-out><![CDATA[2019-04-27 21:14:27 - [TEST_CASE][PASSED] - Test Cases/iCommons Site/Admin Sign In Interface: Test Cases/iCommons Site/Admin Sign In Interface
+
+2019-04-27 21:14:27 - [TEST_STEP][PASSED] - navigateToUrl("http://rack113.cs.drexel.edu/admin"): Navigate to 'http://rack113.cs.drexel.edu/admin' successfully
+
+2019-04-27 21:14:28 - [MESSAGE][PASSED] - Navigate to 'http://rack113.cs.drexel.edu/admin' successfully
+
+2019-04-27 21:14:28 - [TEST_STEP][PASSED] - waitForPageLoad(7): Wait for page load successfully
+
+2019-04-27 21:14:28 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-27 21:14:28 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-27 21:14:31 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-27 21:14:31 - [TEST_STEP][PASSED] - navigateToUrl("http://rack113.cs.drexel.edu/"): Navigate to 'http://rack113.cs.drexel.edu/' successfully
+
+2019-04-27 21:14:33 - [MESSAGE][PASSED] - Navigate to 'http://rack113.cs.drexel.edu/' successfully
+
+2019-04-27 21:14:33 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-27 21:14:36 - [MESSAGE][PASSED] - Delayed 3 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/iCommons Site/Submit Ticket Redirect" classname="Test Cases/iCommons Site/Submit Ticket Redirect" status="PASSED">
+         <system-out><![CDATA[2019-04-27 21:14:36 - [TEST_CASE][PASSED] - Test Cases/iCommons Site/Submit Ticket Redirect: Test Cases/iCommons Site/Submit Ticket Redirect
+
+2019-04-27 21:14:36 - [TEST_STEP][PASSED] - click(findTestObject("Submit Ticket button")): Object: 'Object Repository/Submit Ticket button' is clicked on
+
+2019-04-27 21:14:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Submit Ticket button' is clicked on
+
+2019-04-27 21:14:36 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-04-27 21:14:36 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-27 21:14:36 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-04-27 21:14:38 - [MESSAGE][PASSED] - Delayed 2 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/iCommons Site/Submit Tickets View" classname="Test Cases/iCommons Site/Submit Tickets View" status="PASSED">
+         <system-out><![CDATA[2019-04-27 21:14:38 - [TEST_CASE][PASSED] - Test Cases/iCommons Site/Submit Tickets View: Test Cases/iCommons Site/Submit Tickets View
+
+2019-04-27 21:14:39 - [TEST_STEP][PASSED] - navigateToUrl("http://rack113.cs.drexel.edu/admin"): Navigate to 'http://rack113.cs.drexel.edu/admin' successfully
+
+2019-04-27 21:14:39 - [MESSAGE][PASSED] - Navigate to 'http://rack113.cs.drexel.edu/admin' successfully
+
+2019-04-27 21:14:39 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-04-27 21:14:39 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-27 21:14:39 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-27 21:14:42 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-27 21:14:42 - [TEST_STEP][PASSED] - click(findTestObject("Admin Username Field")): Object: 'Object Repository/Admin Username Field' is clicked on
+
+2019-04-27 21:14:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Username Field' is clicked on
+
+2019-04-27 21:14:42 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-04-27 21:14:43 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-04-27 21:14:43 - [TEST_STEP][PASSED] - setText(findTestObject("Admin Username Field"), "icommonsadmin"): Text 'icommonsadmin' is set on object 'Object Repository/Admin Username Field'
+
+2019-04-27 21:14:43 - [MESSAGE][PASSED] - Text 'icommonsadmin' is set on object 'Object Repository/Admin Username Field'
+
+2019-04-27 21:14:43 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-04-27 21:14:44 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-04-27 21:14:44 - [TEST_STEP][PASSED] - click(findTestObject("Admin Password Field")): Object: 'Object Repository/Admin Password Field' is clicked on
+
+2019-04-27 21:14:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Password Field' is clicked on
+
+2019-04-27 21:14:44 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-04-27 21:14:45 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-04-27 21:14:45 - [TEST_STEP][PASSED] - setText(findTestObject("Admin Password Field"), "AB4IF325!"): Text 'AB4IF325!' is set on object 'Object Repository/Admin Password Field'
+
+2019-04-27 21:14:45 - [MESSAGE][PASSED] - Text 'AB4IF325!' is set on object 'Object Repository/Admin Password Field'
+
+2019-04-27 21:14:45 - [TEST_STEP][PASSED] - delay(0): Delayed 0 second(s)
+
+2019-04-27 21:14:45 - [MESSAGE][PASSED] - Delayed 0 second(s)
+
+2019-04-27 21:14:45 - [TEST_STEP][PASSED] - click(findTestObject("Admin Sign In Button")): Object: 'Object Repository/Admin Sign In Button' is clicked on
+
+2019-04-27 21:14:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Sign In Button' is clicked on
+
+2019-04-27 21:14:46 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-04-27 21:14:46 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-27 21:14:46 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-04-27 21:14:48 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-04-27 21:14:48 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("View Tickets Link"), 1): Scroll to object 'Object Repository/View Tickets Link' successfully
+
+2019-04-27 21:14:48 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/View Tickets Link' successfully
+
+2019-04-27 21:14:48 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-04-27 21:14:49 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-04-27 21:14:49 - [TEST_STEP][PASSED] - click(findTestObject("View Tickets Link")): Object: 'Object Repository/View Tickets Link' is clicked on
+
+2019-04-27 21:14:50 - [MESSAGE][PASSED] - Object: 'Object Repository/View Tickets Link' is clicked on
+
+2019-04-27 21:14:50 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-04-27 21:14:50 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-27 21:14:50 - [TEST_STEP][PASSED] - delay(4): Delayed 4 second(s)
+
+2019-04-27 21:14:54 - [MESSAGE][PASSED] - Delayed 4 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-27 21:13:27 - [TEST_SUITE][PASSED] - Client Side Test Cases 1-9: Test Cases/iCommons Site/Submit Tickets View]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

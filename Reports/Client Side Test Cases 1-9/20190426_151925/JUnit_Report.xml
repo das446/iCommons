@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Client Side Test Cases 1-9" time="12" tests="2" failures="0" errors="0">
+   <testsuite name="Client Side Test Cases 1-9" tests="2" failures="0" errors="0" time="12" timestamp="2019-04-26 15:19:27" hostname="Joseph - Joseph-PC" id="Test Suites/Client Side Test Cases 1-9">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Joseph\\git\\iCommons\\Reports\\Client Side Test Cases 1-9\\20190426_151925"/>
+         <property name="logFiles" value="C:\\Users\\Joseph\\git\\iCommons\\Reports\\Client Side Test Cases 1-9\\20190426_151925\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Joseph - Joseph-PC"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="6.1.2.2"/>
+         <property name="browser" value="Chrome 73.0.3683.103"/>
+         <property name="hostAddress" value="192.168.1.65"/>
+         <property name="sessionId" value="671942ceb666c297d48a8965050ca70f"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/Load Homepage" classname="Test Cases/Load Homepage" status="PASSED">
+         <system-out><![CDATA[2019-04-26 15:19:27 - [TEST_CASE][PASSED] - Test Cases/Load Homepage: Test Cases/Load Homepage
+
+2019-04-26 15:19:27 - [TEST_STEP][PASSED] - openBrowser("http://rack113.cs.drexel.edu/"): Browser is opened with url: 'http://rack113.cs.drexel.edu/'
+
+2019-04-26 15:19:27 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-04-26 15:19:28 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-04-26 15:19:31 - [MESSAGE][PASSED] - Browser is opened with url: 'http://rack113.cs.drexel.edu/'
+
+2019-04-26 15:19:31 - [TEST_STEP][PASSED] - waitForPageLoad(6): Wait for page load successfully
+
+2019-04-26 15:19:32 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-26 15:19:32 - [TEST_STEP][PASSED] - waitForAlert(2): No alert found after 2 second(s).
+
+2019-04-26 15:19:34 - [MESSAGE][WARNING] - No alert found after 2 second(s).]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/CCI Logo Redirect" classname="Test Cases/CCI Logo Redirect" status="PASSED">
+         <system-out><![CDATA[2019-04-26 15:19:34 - [TEST_CASE][PASSED] - Test Cases/CCI Logo Redirect: Test Cases/CCI Logo Redirect
+
+2019-04-26 15:19:34 - [TEST_STEP][PASSED] - click(findTestObject("CCI Logo")): Object: 'Object Repository/CCI Logo' is clicked on
+
+2019-04-26 15:19:35 - [MESSAGE][PASSED] - Object: 'Object Repository/CCI Logo' is clicked on
+
+2019-04-26 15:19:35 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+2019-04-26 15:19:35 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-26 15:19:35 - [TEST_STEP][PASSED] - refresh(): Refresh successfully
+
+2019-04-26 15:19:35 - [MESSAGE][PASSED] - Refresh successfully
+
+2019-04-26 15:19:35 - [TEST_STEP][PASSED] - waitForAlert(3): No alert found after 3 second(s).
+
+2019-04-26 15:19:38 - [MESSAGE][WARNING] - No alert found after 3 second(s).]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-26 15:19:27 - [TEST_SUITE][PASSED] - Client Side Test Cases 1-9: Test Cases/CCI Logo Redirect]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

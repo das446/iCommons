@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Client Side Test Cases 1-9" time="6" tests="1" failures="0" errors="0">
+   <testsuite name="Client Side Test Cases 1-9" tests="1" failures="0" errors="0" time="6" timestamp="2019-04-26 14:56:51" hostname="Joseph - Joseph-PC" id="Test Suites/Client Side Test Cases 1-9">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Joseph\\git\\iCommons\\Reports\\Client Side Test Cases 1-9\\20190426_145649"/>
+         <property name="logFiles" value="C:\\Users\\Joseph\\git\\iCommons\\Reports\\Client Side Test Cases 1-9\\20190426_145649\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Joseph - Joseph-PC"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="6.1.2.2"/>
+         <property name="browser" value="Chrome 73.0.3683.103"/>
+         <property name="hostAddress" value="192.168.1.65"/>
+         <property name="sessionId" value="17350cd2962684d6698fd3d7271bf1a0"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/Load Homepage" classname="Test Cases/Load Homepage" status="PASSED">
+         <system-out><![CDATA[2019-04-26 14:56:51 - [TEST_CASE][PASSED] - Test Cases/Load Homepage: Test Cases/Load Homepage
+
+2019-04-26 14:56:52 - [TEST_STEP][PASSED] - openBrowser("http://rack113.cs.drexel.edu/"): Browser is opened with url: 'http://rack113.cs.drexel.edu/'
+
+2019-04-26 14:56:52 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-04-26 14:56:52 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-04-26 14:56:57 - [MESSAGE][PASSED] - Browser is opened with url: 'http://rack113.cs.drexel.edu/'
+
+2019-04-26 14:56:57 - [TEST_STEP][PASSED] - waitForPageLoad(6): Wait for page load successfully
+
+2019-04-26 14:56:57 - [MESSAGE][PASSED] - Wait for page load successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-26 14:56:51 - [TEST_SUITE][PASSED] - Client Side Test Cases 1-9: Test Cases/Load Homepage]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

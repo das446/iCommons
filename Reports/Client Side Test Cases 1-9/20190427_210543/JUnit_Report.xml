@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Client Side Test Cases 1-9" time="23" tests="2" failures="0" errors="0">
+   <testsuite name="Client Side Test Cases 1-9" tests="2" failures="0" errors="0" time="23" timestamp="2019-04-27 21:05:44" hostname="Joseph - Joseph-PC" id="Test Suites/Client Side Test Cases 1-9">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Joseph\\git\\iCommons\\Reports\\Client Side Test Cases 1-9\\20190427_210543"/>
+         <property name="logFiles" value="C:\\Users\\Joseph\\git\\iCommons\\Reports\\Client Side Test Cases 1-9\\20190427_210543\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Joseph - Joseph-PC"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="6.1.2.2"/>
+         <property name="browser" value="Chrome 73.0.3683.103"/>
+         <property name="hostAddress" value="192.168.1.65"/>
+         <property name="sessionId" value="75ec5884ac850902d2cdc48cccda5649"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/iCommons Site/Load Homepage" classname="Test Cases/iCommons Site/Load Homepage" status="PASSED">
+         <system-out><![CDATA[2019-04-27 21:05:45 - [TEST_CASE][PASSED] - Test Cases/iCommons Site/Load Homepage: Test Cases/iCommons Site/Load Homepage
+
+2019-04-27 21:05:45 - [TEST_STEP][PASSED] - openBrowser("http://rack113.cs.drexel.edu/"): Browser is opened with url: 'http://rack113.cs.drexel.edu/'
+
+2019-04-27 21:05:45 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-04-27 21:05:45 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-04-27 21:05:49 - [MESSAGE][PASSED] - Browser is opened with url: 'http://rack113.cs.drexel.edu/'
+
+2019-04-27 21:05:49 - [TEST_STEP][PASSED] - waitForPageLoad(6): Wait for page load successfully
+
+2019-04-27 21:05:49 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-27 21:05:49 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-27 21:05:52 - [MESSAGE][PASSED] - Delayed 3 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/iCommons Site/Submit Tickets View" classname="Test Cases/iCommons Site/Submit Tickets View" status="PASSED">
+         <system-out><![CDATA[2019-04-27 21:05:52 - [TEST_CASE][PASSED] - Test Cases/iCommons Site/Submit Tickets View: Test Cases/iCommons Site/Submit Tickets View
+
+2019-04-27 21:05:52 - [TEST_STEP][PASSED] - navigateToUrl("http://rack113.cs.drexel.edu/admin"): Navigate to 'http://rack113.cs.drexel.edu/admin' successfully
+
+2019-04-27 21:05:53 - [MESSAGE][PASSED] - Navigate to 'http://rack113.cs.drexel.edu/admin' successfully
+
+2019-04-27 21:05:53 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-04-27 21:05:53 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-27 21:05:53 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-27 21:05:56 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-27 21:05:56 - [TEST_STEP][PASSED] - click(findTestObject("Admin Username Field")): Object: 'Object Repository/Admin Username Field' is clicked on
+
+2019-04-27 21:05:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Username Field' is clicked on
+
+2019-04-27 21:05:56 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-04-27 21:05:57 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-04-27 21:05:57 - [TEST_STEP][PASSED] - setText(findTestObject("Admin Username Field"), "icommonsadmin"): Text 'icommonsadmin' is set on object 'Object Repository/Admin Username Field'
+
+2019-04-27 21:05:57 - [MESSAGE][PASSED] - Text 'icommonsadmin' is set on object 'Object Repository/Admin Username Field'
+
+2019-04-27 21:05:57 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-04-27 21:05:58 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-04-27 21:05:58 - [TEST_STEP][PASSED] - click(findTestObject("Admin Password Field")): Object: 'Object Repository/Admin Password Field' is clicked on
+
+2019-04-27 21:05:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Password Field' is clicked on
+
+2019-04-27 21:05:58 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-04-27 21:05:59 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-04-27 21:05:59 - [TEST_STEP][PASSED] - setText(findTestObject("Admin Password Field"), "AB4IF325!"): Text 'AB4IF325!' is set on object 'Object Repository/Admin Password Field'
+
+2019-04-27 21:05:59 - [MESSAGE][PASSED] - Text 'AB4IF325!' is set on object 'Object Repository/Admin Password Field'
+
+2019-04-27 21:05:59 - [TEST_STEP][PASSED] - delay(0): Delayed 0 second(s)
+
+2019-04-27 21:05:59 - [MESSAGE][PASSED] - Delayed 0 second(s)
+
+2019-04-27 21:05:59 - [TEST_STEP][PASSED] - click(findTestObject("Admin Sign In Button")): Object: 'Object Repository/Admin Sign In Button' is clicked on
+
+2019-04-27 21:06:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Sign In Button' is clicked on
+
+2019-04-27 21:06:00 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-04-27 21:06:00 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-27 21:06:00 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-27 21:06:03 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-27 21:06:03 - [TEST_STEP][PASSED] - click(findTestObject("View Tickets Link")): Object: 'Object Repository/View Tickets Link' is clicked on
+
+2019-04-27 21:06:03 - [MESSAGE][PASSED] - Object: 'Object Repository/View Tickets Link' is clicked on
+
+2019-04-27 21:06:03 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-04-27 21:06:03 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-27 21:06:03 - [TEST_STEP][PASSED] - delay(4): Delayed 4 second(s)
+
+2019-04-27 21:06:07 - [MESSAGE][PASSED] - Delayed 4 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-27 21:05:44 - [TEST_SUITE][PASSED] - Client Side Test Cases 1-9: Test Cases/iCommons Site/Submit Tickets View]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

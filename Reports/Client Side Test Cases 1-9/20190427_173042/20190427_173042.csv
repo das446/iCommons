@@ -1,0 +1,86 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Client Side Test Cases 1-9,Chrome 73.0.3683.103,Client Side Test Cases,,2019-04-27 17:30:52,2019-04-27 17:32:09,1m - 16.808s,PASSED
+,,,,,,,
+Test Cases/iCommons Site/Load Homepage,Chrome 73.0.3683.103,User visits homepage of iCommons Webapp.,T7.2.1,2019-04-27 17:30:52,2019-04-27 17:31:01,8.455s,PASSED
+"openBrowser(""http://rack113.cs.drexel.edu/"")",Chrome 73.0.3683.103,"User opens a web browser and navigates to http://rack113.cs.drexel.edu/
+
+User is presented with a functional homepage for the iCommons App
+CCI logo caption is present on the page.
+A list of occupied rooms are displayed on the page.
+A list of available rooms are displayed on the page.
+User is allowed to scroll when viewing the list of occupied rooms.
+Middle section of the page consists of a CCI photo and caption that the Administrator changes.
+Site footer is displayed at the bottom of the screen.
+Advanced Search button is located at the bottom of the screen.
+User is able to view background image.
+",,2019-04-27 17:30:53,2019-04-27 17:30:58,5.066s,PASSED
+waitForPageLoad(6),Chrome 73.0.3683.103,User waits for page to load,,2019-04-27 17:30:58,2019-04-27 17:30:58,0.064s,PASSED
+delay(3),Chrome 73.0.3683.103,,,2019-04-27 17:30:58,2019-04-27 17:31:01,3.020s,PASSED
+,,,,,,,
+Test Cases/iCommons Site/CCI Logo Redirect,Chrome 73.0.3683.103,"Upon clicking the CCI logo, the user is redirected to Drexel’s website.",T7.2.2,2019-04-27 17:31:01,2019-04-27 17:31:15,13.632s,PASSED
+"click(findTestObject(""CCI Logo""))",Chrome 73.0.3683.103,"User clicks on CCI logo in the top left corner of the page.
+",,2019-04-27 17:31:01,2019-04-27 17:31:02,1.193s,PASSED
+waitForPageLoad(10),Chrome 73.0.3683.103,User is redirected to Drexel’s website.,,2019-04-27 17:31:02,2019-04-27 17:31:02,0.011s,PASSED
+delay(3),Chrome 73.0.3683.103,,,2019-04-27 17:31:02,2019-04-27 17:31:05,3.004s,PASSED
+back(),Chrome 73.0.3683.103,User returns to the homepage.,,2019-04-27 17:31:05,2019-04-27 17:31:13,7.266s,PASSED
+waitForPageLoad(5),Chrome 73.0.3683.103,,,2019-04-27 17:31:13,2019-04-27 17:31:13,0.011s,PASSED
+delay(2),Chrome 73.0.3683.103,,,2019-04-27 17:31:13,2019-04-27 17:31:15,2.002s,PASSED
+,,,,,,,
+Test Cases/iCommons Site/Reserve Room Link,Chrome 73.0.3683.103,"Upon clicking the Reserve Room link on the toolbar, the user the user is redirected to a page to reserve a conference room.",T7.2.4a,2019-04-27 17:31:15,2019-04-27 17:31:19,4.640s,PASSED
+"click(findTestObject(""Resource Reservation option""))",Chrome 73.0.3683.103,User clicks the Resource Reservation option.,,2019-04-27 17:31:15,2019-04-27 17:31:15,0.076s,PASSED
+delay(1),Chrome 73.0.3683.103,,,2019-04-27 17:31:15,2019-04-27 17:31:16,1.002s,PASSED
+"click(findTestObject(""Room Reservation link""))",Chrome 73.0.3683.103,User clicks on the Reserve Room link.,,2019-04-27 17:31:16,2019-04-27 17:31:16,0.395s,PASSED
+delay(3),Chrome 73.0.3683.103,User is redirected to a page to reserve a conference room.,,2019-04-27 17:31:16,2019-04-27 17:31:19,3.001s,PASSED
+,,,,,,,
+Test Cases/iCommons Site/Reserve Equipment Link,Chrome 73.0.3683.103,"Upon clicking the Reserve Equipment link on the toolbar, the user is redirected to a page to reserve equipment.",T7.2.4b,2019-04-27 17:31:19,2019-04-27 17:31:25,5.587s,PASSED
+"click(findTestObject(""Resource Reservation option""))",Chrome 73.0.3683.103,User clicks on the Resource Reservation option on the toolbar.,,2019-04-27 17:31:19,2019-04-27 17:31:19,0.054s,PASSED
+delay(2),Chrome 73.0.3683.103,,,2019-04-27 17:31:19,2019-04-27 17:31:21,2.005s,PASSED
+"click(findTestObject(""Equipment Reservation link""))",Chrome 73.0.3683.103,,,2019-04-27 17:31:21,2019-04-27 17:31:22,0.386s,PASSED
+waitForPageLoad(5),Chrome 73.0.3683.103,The Reserve Equipment page loads.,,2019-04-27 17:31:22,2019-04-27 17:31:22,0.023s,PASSED
+delay(3),Chrome 73.0.3683.103,,,2019-04-27 17:31:22,2019-04-27 17:31:25,3.003s,PASSED
+,,,,,,,
+Test Cases/iCommons Site/Home Link Redirect,Chrome 73.0.3683.103,"Upon clicking the home link on the toolbar, the user is redirected to the homepage of the iCommons app.",T7.2.3,2019-04-27 17:31:25,2019-04-27 17:31:29,4.454s,PASSED
+"click(findTestObject(""Home link""))",Chrome 73.0.3683.103,User clicks on the Home link on the toolbar.,,2019-04-27 17:31:25,2019-04-27 17:31:27,2.316s,PASSED
+waitForPageLoad(6),Chrome 73.0.3683.103,User is redirected the homepage of the iCommons app.,,2019-04-27 17:31:27,2019-04-27 17:31:27,0.011s,PASSED
+delay(2),Chrome 73.0.3683.103,,,2019-04-27 17:31:27,2019-04-27 17:31:29,2.002s,PASSED
+,,,,,,,
+Test Cases/iCommons Site/My CCI Redirect,Chrome 73.0.3683.103,"Upon clicking the My CCI link on the toolbar, the user is redirected to Drexel’s CCI website.",T7.2.5,2019-04-27 17:31:29,2019-04-27 17:31:40,10.791s,PASSED
+"click(findTestObject(""My CCI link""))",Chrome 73.0.3683.103,,,2019-04-27 17:31:29,2019-04-27 17:31:31,1.572s,PASSED
+waitForPageLoad(8),Chrome 73.0.3683.103,,,2019-04-27 17:31:31,2019-04-27 17:31:31,0.011s,PASSED
+delay(3),Chrome 73.0.3683.103,,,2019-04-27 17:31:31,2019-04-27 17:31:34,3.002s,PASSED
+back(),Chrome 73.0.3683.103,,,2019-04-27 17:31:34,2019-04-27 17:31:36,2.070s,PASSED
+waitForPageLoad(5),Chrome 73.0.3683.103,,,2019-04-27 17:31:36,2019-04-27 17:31:36,0.012s,PASSED
+delay(4),Chrome 73.0.3683.103,,,2019-04-27 17:31:36,2019-04-27 17:31:40,4.003s,PASSED
+,,,,,,,
+Test Cases/iCommons Site/Sign In Interface,Chrome 73.0.3683.103,"Upon clicking the Sign In link on the toolbar, the user is provided with a sign in interface containing username and password fields.",T7.2.6,2019-04-27 17:31:40,2019-04-27 17:31:59,19.057s,PASSED
+"click(findTestObject(""Sign In link""))",Chrome 73.0.3683.103,,,2019-04-27 17:31:40,2019-04-27 17:31:41,0.418s,PASSED
+waitForPageLoad(5),Chrome 73.0.3683.103,,,2019-04-27 17:31:41,2019-04-27 17:31:41,0.016s,PASSED
+delay(2),Chrome 73.0.3683.103,,,2019-04-27 17:31:41,2019-04-27 17:31:43,2.001s,PASSED
+"click(findTestObject(""Username field""))",Chrome 73.0.3683.103,,,2019-04-27 17:31:43,2019-04-27 17:31:43,0.068s,PASSED
+delay(1),Chrome 73.0.3683.103,,,2019-04-27 17:31:43,2019-04-27 17:31:44,1.003s,PASSED
+"setText(findTestObject(""Username field""), ""test"")",Chrome 73.0.3683.103,,,2019-04-27 17:31:44,2019-04-27 17:31:44,0.077s,PASSED
+delay(1),Chrome 73.0.3683.103,,,2019-04-27 17:31:44,2019-04-27 17:31:45,1.002s,PASSED
+"click(findTestObject(""Password field""))",Chrome 73.0.3683.103,,,2019-04-27 17:31:45,2019-04-27 17:31:45,0.057s,PASSED
+delay(1),Chrome 73.0.3683.103,,,2019-04-27 17:31:45,2019-04-27 17:31:46,1.001s,PASSED
+"setText(findTestObject(""Password field""), ""test"")",Chrome 73.0.3683.103,,,2019-04-27 17:31:46,2019-04-27 17:31:46,0.061s,PASSED
+delay(1),Chrome 73.0.3683.103,,,2019-04-27 17:31:46,2019-04-27 17:31:47,1.001s,PASSED
+"click(findTestObject(""Sign In button""))",Chrome 73.0.3683.103,,,2019-04-27 17:31:47,2019-04-27 17:31:47,0.576s,PASSED
+waitForPageLoad(5),Chrome 73.0.3683.103,,,2019-04-27 17:31:47,2019-04-27 17:31:47,0.008s,PASSED
+delay(3),Chrome 73.0.3683.103,,,2019-04-27 17:31:47,2019-04-27 17:31:50,3.001s,PASSED
+"click(findTestObject(""Username field""))",Chrome 73.0.3683.103,,,2019-04-27 17:31:50,2019-04-27 17:31:51,0.049s,PASSED
+delay(1),Chrome 73.0.3683.103,,,2019-04-27 17:31:51,2019-04-27 17:31:52,1.002s,PASSED
+"setText(findTestObject(""Username field""), ""jtp53"")",Chrome 73.0.3683.103,,,2019-04-27 17:31:52,2019-04-27 17:31:52,0.063s,PASSED
+delay(1),Chrome 73.0.3683.103,,,2019-04-27 17:31:52,2019-04-27 17:31:53,1.001s,PASSED
+"click(findTestObject(""Password field""))",Chrome 73.0.3683.103,,,2019-04-27 17:31:53,2019-04-27 17:31:53,0.067s,PASSED
+"setText(findTestObject(""Password field""), ""testone23"")",Chrome 73.0.3683.103,,,2019-04-27 17:31:53,2019-04-27 17:31:53,0.067s,PASSED
+delay(1),Chrome 73.0.3683.103,,,2019-04-27 17:31:53,2019-04-27 17:31:54,1.001s,PASSED
+"click(findTestObject(""Sign In button""))",Chrome 73.0.3683.103,,,2019-04-27 17:31:54,2019-04-27 17:31:56,2.381s,PASSED
+waitForPageLoad(5),Chrome 73.0.3683.103,,,2019-04-27 17:31:56,2019-04-27 17:31:56,0.008s,PASSED
+delay(3),Chrome 73.0.3683.103,,,2019-04-27 17:31:56,2019-04-27 17:31:59,3.003s,PASSED
+,,,,,,,
+Test Cases/iCommons Site/Admin Sign In Interface,Chrome 73.0.3683.103,"Upon navigating to the admin panel, the user is provided with an admin sign in interface.",T7.2.7,2019-04-27 17:31:59,2019-04-27 17:32:08,9.207s,PASSED
+"navigateToUrl(""http://rack113.cs.drexel.edu/admin"")",Chrome 73.0.3683.103,,,2019-04-27 17:31:59,2019-04-27 17:32:00,0.643s,PASSED
+waitForPageLoad(7),Chrome 73.0.3683.103,,,2019-04-27 17:32:00,2019-04-27 17:32:00,0.009s,PASSED
+delay(3),Chrome 73.0.3683.103,,,2019-04-27 17:32:00,2019-04-27 17:32:03,3.001s,PASSED
+"navigateToUrl(""http://rack113.cs.drexel.edu/"")",Chrome 73.0.3683.103,,,2019-04-27 17:32:03,2019-04-27 17:32:05,2.441s,PASSED
+delay(3),Chrome 73.0.3683.103,,,2019-04-27 17:32:05,2019-04-27 17:32:08,3.001s,PASSED

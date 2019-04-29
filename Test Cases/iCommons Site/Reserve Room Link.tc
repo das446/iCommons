@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Upon clicking the Reserve Room link on the toolbar, the user the user is redirected to a page to reserve a conference room.</description>
+   <name>Reserve Room Link</name>
+   <tag>T7.2.4a</tag>
+   <comment></comment>
+   <testCaseGuid>4ab64e5d-94da-47d6-b8f3-33d4482d87aa</testCaseGuid>
+</TestCaseEntity>

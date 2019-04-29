@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This page contains a list of all submitted tickets through the site.</description>
+   <name>Submit Tickets View</name>
+   <tag>T7.2.9</tag>
+   <comment></comment>
+   <testCaseGuid>11603bf8-7c7f-4d90-9461-e716446bf298</testCaseGuid>
+</TestCaseEntity>

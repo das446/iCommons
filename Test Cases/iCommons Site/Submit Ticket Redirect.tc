@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Upon clicking the Submit Ticket button, the user is redirected to the submit ticket interface of the iCommons app.</description>
+   <name>Submit Ticket Redirect</name>
+   <tag>T7.2.8</tag>
+   <comment></comment>
+   <testCaseGuid>d914c4c5-7d03-4dbf-ad1b-0df8d6300741</testCaseGuid>
+</TestCaseEntity>

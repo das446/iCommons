@@ -1043,3 +1043,8 @@ static/src/alertifyjs/css/themes/semantic.css
 static/src/alertifyjs/css/themes/semantic.min.css
 static/src/alertifyjs/css/themes/semantic.rtl.css
 static/src/alertifyjs/css/themes/semantic.rtl.min.css
+/bin/
+/Libs/
+/.settings/
+/.classpath
+.svn/

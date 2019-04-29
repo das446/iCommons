@@ -1,0 +1,24 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Client Side Test Cases 1-9,Chrome 73.0.3683.103,Client Side Test Cases,,2019-04-26 15:17:06,2019-04-26 15:17:18,12.041s,PASSED
+,,,,,,,
+Test Cases/Load Homepage,Chrome 73.0.3683.103,User visits homepage of iCommons Webapp.,T7.2.1,2019-04-26 15:17:06,2019-04-26 15:17:13,6.815s,PASSED
+"openBrowser(""http://rack113.cs.drexel.edu/"")",Chrome 73.0.3683.103,"User opens a web browser and navigates to http://rack113.cs.drexel.edu/
+
+User is presented with a functional homepage for the iCommons App
+CCI logo caption is present on the page.
+A list of occupied rooms are displayed on the page.
+A list of available rooms are displayed on the page.
+User is allowed to scroll when viewing the list of occupied rooms.
+Middle section of the page consists of a CCI photo and caption that the Administrator changes.
+Site footer is displayed at the bottom of the screen.
+Advanced Search button is located at the bottom of the screen.
+User is able to view background image.
+",,2019-04-26 15:17:07,2019-04-26 15:17:11,4.320s,PASSED
+waitForPageLoad(6),Chrome 73.0.3683.103,User waits for page to load,,2019-04-26 15:17:11,2019-04-26 15:17:11,0.070s,PASSED
+waitForAlert(2),Chrome 73.0.3683.103,,,2019-04-26 15:17:11,2019-04-26 15:17:13,2.044s,PASSED
+,,,,,,,
+Test Cases/CCI Logo Redirect,Chrome 73.0.3683.103,"Upon clicking the CCI logo, the user is redirected to Drexel’s website.",T7.2.2,2019-04-26 15:17:13,2019-04-26 15:17:17,4.314s,PASSED
+"click(findTestObject(""CCI Logo""))",Chrome 73.0.3683.103,"User clicks on CCI logo in the top left corner of the page.
+",,2019-04-26 15:17:13,2019-04-26 15:17:14,1.106s,PASSED
+waitForPageLoad(10),Chrome 73.0.3683.103,User is redirected to Drexel’s website.,,2019-04-26 15:17:14,2019-04-26 15:17:14,0.011s,PASSED
+waitForAlert(3),Chrome 73.0.3683.103,,,2019-04-26 15:17:14,2019-04-26 15:17:17,3.025s,PASSED

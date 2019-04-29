@@ -1,0 +1,37 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Client Side Test Cases 1-9,Chrome 73.0.3683.103,Client Side Test Cases,,2019-04-27 21:05:44,2019-04-27 21:06:08,23.432s,PASSED
+,,,,,,,
+Test Cases/iCommons Site/Load Homepage,Chrome 73.0.3683.103,User visits homepage of iCommons Webapp.,T7.2.1,2019-04-27 21:05:45,2019-04-27 21:05:52,7.408s,PASSED
+"openBrowser(""http://rack113.cs.drexel.edu/"")",Chrome 73.0.3683.103,"User opens a web browser and navigates to http://rack113.cs.drexel.edu/
+
+User is presented with a functional homepage for the iCommons App
+CCI logo caption is present on the page.
+A list of occupied rooms are displayed on the page.
+A list of available rooms are displayed on the page.
+User is allowed to scroll when viewing the list of occupied rooms.
+Middle section of the page consists of a CCI photo and caption that the Administrator changes.
+Site footer is displayed at the bottom of the screen.
+Advanced Search button is located at the bottom of the screen.
+User is able to view background image.
+",,2019-04-27 21:05:45,2019-04-27 21:05:49,4.045s,PASSED
+waitForPageLoad(6),Chrome 73.0.3683.103,User waits for page to load,,2019-04-27 21:05:49,2019-04-27 21:05:49,0.061s,PASSED
+delay(3),Chrome 73.0.3683.103,,,2019-04-27 21:05:49,2019-04-27 21:05:52,3.022s,PASSED
+,,,,,,,
+Test Cases/iCommons Site/Submit Tickets View,Chrome 73.0.3683.103,This page contains a list of all submitted tickets through the site.,T7.2.9,2019-04-27 21:05:52,2019-04-27 21:06:07,15.181s,PASSED
+"navigateToUrl(""http://rack113.cs.drexel.edu/admin"")",Chrome 73.0.3683.103,,,2019-04-27 21:05:52,2019-04-27 21:05:53,0.496s,PASSED
+waitForPageLoad(5),Chrome 73.0.3683.103,,,2019-04-27 21:05:53,2019-04-27 21:05:53,0.016s,PASSED
+delay(3),Chrome 73.0.3683.103,,,2019-04-27 21:05:53,2019-04-27 21:05:56,3.002s,PASSED
+"click(findTestObject(""Admin Username Field""))",Chrome 73.0.3683.103,,,2019-04-27 21:05:56,2019-04-27 21:05:56,0.072s,PASSED
+delay(1),Chrome 73.0.3683.103,,,2019-04-27 21:05:56,2019-04-27 21:05:57,1.002s,PASSED
+"setText(findTestObject(""Admin Username Field""), ""icommonsadmin"")",Chrome 73.0.3683.103,,,2019-04-27 21:05:57,2019-04-27 21:05:57,0.084s,PASSED
+delay(1),Chrome 73.0.3683.103,,,2019-04-27 21:05:57,2019-04-27 21:05:58,1.001s,PASSED
+"click(findTestObject(""Admin Password Field""))",Chrome 73.0.3683.103,,,2019-04-27 21:05:58,2019-04-27 21:05:58,0.049s,PASSED
+delay(1),Chrome 73.0.3683.103,,,2019-04-27 21:05:58,2019-04-27 21:05:59,1.002s,PASSED
+"setText(findTestObject(""Admin Password Field""), ""AB4IF325!"")",Chrome 73.0.3683.103,,,2019-04-27 21:05:59,2019-04-27 21:05:59,0.069s,PASSED
+delay(0),Chrome 73.0.3683.103,,,2019-04-27 21:05:59,2019-04-27 21:05:59,0.065s,PASSED
+"click(findTestObject(""Admin Sign In Button""))",Chrome 73.0.3683.103,,,2019-04-27 21:05:59,2019-04-27 21:06:00,1.101s,PASSED
+waitForPageLoad(5),Chrome 73.0.3683.103,,,2019-04-27 21:06:00,2019-04-27 21:06:00,0.015s,PASSED
+delay(3),Chrome 73.0.3683.103,,,2019-04-27 21:06:00,2019-04-27 21:06:03,3.002s,PASSED
+"click(findTestObject(""View Tickets Link""))",Chrome 73.0.3683.103,,,2019-04-27 21:06:03,2019-04-27 21:06:03,0.060s,PASSED
+waitForPageLoad(5),Chrome 73.0.3683.103,,,2019-04-27 21:06:03,2019-04-27 21:06:03,0.007s,PASSED
+delay(4),Chrome 73.0.3683.103,,,2019-04-27 21:06:03,2019-04-27 21:06:07,4.001s,PASSED

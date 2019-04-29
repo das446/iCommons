@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Client Side Test Cases 1-9" time="42" tests="6" failures="0" errors="0">
+   <testsuite name="Client Side Test Cases 1-9" tests="6" failures="0" errors="0" time="42" timestamp="2019-04-27 03:02:14" hostname="Joseph - Joseph-PC" id="Test Suites/Client Side Test Cases 1-9">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Joseph\\git\\iCommons\\Reports\\Client Side Test Cases 1-9\\20190427_030212"/>
+         <property name="logFiles" value="C:\\Users\\Joseph\\git\\iCommons\\Reports\\Client Side Test Cases 1-9\\20190427_030212\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Joseph - Joseph-PC"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="6.1.2.2"/>
+         <property name="browser" value="Chrome 73.0.3683.103"/>
+         <property name="hostAddress" value="192.168.1.65"/>
+         <property name="sessionId" value="bed2eb79345234b6f12cb5d472dfe09d"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/iCommons Site/Load Homepage" classname="Test Cases/iCommons Site/Load Homepage" status="PASSED">
+         <system-out><![CDATA[2019-04-27 03:02:14 - [TEST_CASE][PASSED] - Test Cases/iCommons Site/Load Homepage: Test Cases/iCommons Site/Load Homepage
+
+2019-04-27 03:02:14 - [TEST_STEP][PASSED] - openBrowser("http://rack113.cs.drexel.edu/"): Browser is opened with url: 'http://rack113.cs.drexel.edu/'
+
+2019-04-27 03:02:14 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-04-27 03:02:14 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-04-27 03:02:18 - [MESSAGE][PASSED] - Browser is opened with url: 'http://rack113.cs.drexel.edu/'
+
+2019-04-27 03:02:18 - [TEST_STEP][PASSED] - waitForPageLoad(6): Wait for page load successfully
+
+2019-04-27 03:02:18 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-27 03:02:18 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-27 03:02:21 - [MESSAGE][PASSED] - Delayed 3 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/iCommons Site/CCI Logo Redirect" classname="Test Cases/iCommons Site/CCI Logo Redirect" status="PASSED">
+         <system-out><![CDATA[2019-04-27 03:02:21 - [TEST_CASE][PASSED] - Test Cases/iCommons Site/CCI Logo Redirect: Test Cases/iCommons Site/CCI Logo Redirect
+
+2019-04-27 03:02:21 - [TEST_STEP][PASSED] - click(findTestObject("CCI Logo")): Object: 'Object Repository/CCI Logo' is clicked on
+
+2019-04-27 03:02:22 - [MESSAGE][PASSED] - Object: 'Object Repository/CCI Logo' is clicked on
+
+2019-04-27 03:02:22 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+2019-04-27 03:02:22 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-27 03:02:22 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-27 03:02:25 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-27 03:02:25 - [TEST_STEP][PASSED] - back(): Navigate back successfully
+
+2019-04-27 03:02:27 - [MESSAGE][PASSED] - Navigate back successfully
+
+2019-04-27 03:02:27 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-04-27 03:02:27 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-27 03:02:27 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-04-27 03:02:29 - [MESSAGE][PASSED] - Delayed 2 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/iCommons Site/Reserve Room Link" classname="Test Cases/iCommons Site/Reserve Room Link" status="PASSED">
+         <system-out><![CDATA[2019-04-27 03:02:29 - [TEST_CASE][PASSED] - Test Cases/iCommons Site/Reserve Room Link: Test Cases/iCommons Site/Reserve Room Link
+
+2019-04-27 03:02:29 - [TEST_STEP][PASSED] - click(findTestObject("Resource Reservation option")): Object: 'Object Repository/Resource Reservation option' is clicked on
+
+2019-04-27 03:02:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Resource Reservation option' is clicked on
+
+2019-04-27 03:02:29 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-04-27 03:02:30 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-04-27 03:02:30 - [TEST_STEP][PASSED] - click(findTestObject("Room Reservation link")): Object: 'Object Repository/Room Reservation link' is clicked on
+
+2019-04-27 03:02:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Room Reservation link' is clicked on
+
+2019-04-27 03:02:31 - [TEST_STEP][PASSED] - delay(4): Delayed 4 second(s)
+
+2019-04-27 03:02:35 - [MESSAGE][PASSED] - Delayed 4 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/iCommons Site/Reserve Equipment Link" classname="Test Cases/iCommons Site/Reserve Equipment Link" status="PASSED">
+         <system-out><![CDATA[2019-04-27 03:02:35 - [TEST_CASE][PASSED] - Test Cases/iCommons Site/Reserve Equipment Link: Test Cases/iCommons Site/Reserve Equipment Link
+
+2019-04-27 03:02:35 - [TEST_STEP][PASSED] - click(findTestObject("Resource Reservation option")): Object: 'Object Repository/Resource Reservation option' is clicked on
+
+2019-04-27 03:02:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Resource Reservation option' is clicked on
+
+2019-04-27 03:02:35 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-04-27 03:02:37 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-04-27 03:02:37 - [TEST_STEP][PASSED] - click(findTestObject("Equipment Reservation link")): Object: 'Object Repository/Equipment Reservation link' is clicked on
+
+2019-04-27 03:02:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Equipment Reservation link' is clicked on
+
+2019-04-27 03:02:37 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-04-27 03:02:37 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-27 03:02:37 - [TEST_STEP][PASSED] - delay(4): Delayed 4 second(s)
+
+2019-04-27 03:02:41 - [MESSAGE][PASSED] - Delayed 4 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/iCommons Site/Home Link Redirect" classname="Test Cases/iCommons Site/Home Link Redirect" status="PASSED">
+         <system-out><![CDATA[2019-04-27 03:02:41 - [TEST_CASE][PASSED] - Test Cases/iCommons Site/Home Link Redirect: Test Cases/iCommons Site/Home Link Redirect
+
+2019-04-27 03:02:42 - [TEST_STEP][PASSED] - click(findTestObject("Home link")): Object: 'Object Repository/Home link' is clicked on
+
+2019-04-27 03:02:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Home link' is clicked on
+
+2019-04-27 03:02:43 - [TEST_STEP][PASSED] - waitForPageLoad(6): Wait for page load successfully
+
+2019-04-27 03:02:43 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-27 03:02:43 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-04-27 03:02:45 - [MESSAGE][PASSED] - Delayed 2 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/iCommons Site/My CCI Redirect" classname="Test Cases/iCommons Site/My CCI Redirect" status="PASSED">
+         <system-out><![CDATA[2019-04-27 03:02:45 - [TEST_CASE][PASSED] - Test Cases/iCommons Site/My CCI Redirect: Test Cases/iCommons Site/My CCI Redirect
+
+2019-04-27 03:02:45 - [TEST_STEP][PASSED] - click(findTestObject("My CCI link")): Object: 'Object Repository/My CCI link' is clicked on
+
+2019-04-27 03:02:47 - [MESSAGE][PASSED] - Object: 'Object Repository/My CCI link' is clicked on
+
+2019-04-27 03:02:47 - [TEST_STEP][PASSED] - waitForPageLoad(8): Wait for page load successfully
+
+2019-04-27 03:02:47 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-27 03:02:47 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-27 03:02:50 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-27 03:02:50 - [TEST_STEP][PASSED] - back(): Navigate back successfully
+
+2019-04-27 03:02:52 - [MESSAGE][PASSED] - Navigate back successfully
+
+2019-04-27 03:02:52 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-04-27 03:02:52 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-27 03:02:52 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-27 03:02:55 - [MESSAGE][PASSED] - Delayed 3 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-27 03:02:14 - [TEST_SUITE][PASSED] - Client Side Test Cases 1-9: Test Cases/iCommons Site/My CCI Redirect]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
