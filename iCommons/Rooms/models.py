@@ -20,7 +20,10 @@ RoomStatuses = (
 class Room(models.Model):
     building = models.CharField(max_length=100)
     number = models.CharField(max_length=10)
-    reservations = models.ManyToManyField("Reservation", blank=True)
+    
+    @property
+    def reservations(self):
+        return Reservation.objects.filter(reserved_room = self) 
 
     def CurReservation(self,time):
         for reservation in self.reservations.all():
@@ -52,7 +55,7 @@ class Room(models.Model):
 class Class(models.Model):
     name = models.CharField(max_length=100) #full name
     course_id = models.CharField(max_length=100) #CS 265
-    teacher = models.ForeignKey(User)
+    teachers = models.ManyToManyField(User)
     crn = models.CharField(max_length=10, null=True, blank=True)
 
     def __str__(self):
@@ -72,7 +75,7 @@ class Reservation(models.Model):
         if self.description != None and self.description != "":
             return self.description
         elif self.cur_class != None:
-            teacher = self.cur_class.teacher.full_name
+            teacher = self.cur_class.teachers.all()[0].full_name
             return "Occupied by "+teacher+"\nClass:"+self.cur_class.course_id 
         else:
             return ""
@@ -88,7 +91,6 @@ class Reservation(models.Model):
             end = self.end_time + datetime.timedelta(days=7*i)
             r = Reservation(start_time=start, end_time=end,cur_class=self.cur_class, description=self.description,repeat=False, reserved_room=room)
             r.save()
-            room.reservations.add(r)
 
     def __str__(self):
         return self.Description() +" "+ str(self.start_time) + " to " + str(self.end_time)
