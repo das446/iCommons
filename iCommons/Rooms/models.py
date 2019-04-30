@@ -51,7 +51,7 @@ class Room(models.Model):
 
 class Class(models.Model):
     name = models.CharField(max_length=100) #full name
-    course_id = models.CharField(max_length=10) #CS 265
+    course_id = models.CharField(max_length=100) #CS 265
     teacher = models.ForeignKey(User)
     crn = models.CharField(max_length=10, null=True, blank=True)
 
