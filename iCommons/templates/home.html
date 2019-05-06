@@ -23,7 +23,9 @@
 
           {% for room in occupied_rooms %}
           <h4> Room: {{ room }}</h4>
+          {% if room.CurClass != None %}
           <h4> Class: {{ room.CurClass }}</h4>
+          {% endif %}
           <hr style="background-color: white; color:white;" />
           {% endfor %}
         </div>
