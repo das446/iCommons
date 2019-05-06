@@ -6,7 +6,7 @@ from .models import Ticket
 from datetime import datetime
 from django.core.mail import send_mail, EmailMultiAlternatives
 from Users.models import User
-from iCommons import settings
+from django.conf import settings
 from django.core.signing import BadSignature
 from django.http import Http404
 
@@ -27,7 +27,7 @@ def create(request):
         return render(request, 'confirm.html')
 
 def send_email(from_email,subject,text,email):
-    to_email = settings.ihelp_email
+    to_email = settings.IHELP_EMAIL
     print("from:" + from_email)
     send_mail(subject, text,from_email, [to_email], fail_silently=False) 
 

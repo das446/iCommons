@@ -5,7 +5,7 @@ from django.shortcuts import render, get_object_or_404
 from .models import Device, DeviceType, LoanRequest, DeviceStatus
 import datetime
 import loanshark
-from iCommons import settings
+from django.conf import settings
 from django.core.mail import send_mail, EmailMultiAlternatives
 
 # Create your views here.
@@ -45,13 +45,13 @@ def reserve(request):
 
 
 def send_email(user,subject,text):
-    from_email = settings.ihelp_email
+    from_email = settings.IHELP_EMAIL
     to_email = user + "@drexel.edu"
     send_mail(subject, text,from_email, [to_email], fail_silently=False) 
 
 def send_email_to_SA(user,device):
     from_email = user + "@drexel.edu"
-    to_email = settings.ihelp_email
+    to_email = settings.IHELP_EMAIL
     subject =  "Device "+device+" Reservation"
     text = " Device "+device+" has been reserved by "+user
     send_mail(subject, text,from_email, [to_email], fail_silently=False) 
