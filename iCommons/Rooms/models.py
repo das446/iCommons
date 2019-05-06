@@ -26,9 +26,10 @@ class Room(models.Model):
         return Reservation.objects.filter(reserved_room = self) 
 
     def CurReservation(self,time):
-        for reservation in self.reservations.all():
-            if is_datetime_between(reservation.start_time, reservation.end_time, time):
-                return reservation
+        for r in self.reservations.all():
+            available = is_datetime_between(r.start_time, r.end_time, time)
+            if available != "Error" and available==True:
+                return r
         return None
 
     def Available(self, time):
@@ -102,7 +103,7 @@ def is_datetime_between(begin_time, end_time, check_time):
         end_time = end_time.replace(tzinfo=utc)
         check_time = check_time.replace(tzinfo=utc)
     except:
-        return False    
+        return "Error"    
     return begin_time < check_time < end_time
 
 
