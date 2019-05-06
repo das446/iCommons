@@ -104,7 +104,7 @@ def is_datetime_between(begin_time, end_time, check_time):
         check_time = check_time.replace(tzinfo=utc)
     except:
         return "Error"    
-    return begin_time < check_time < end_time
+    return begin_time < check_time and check_time < end_time
 
 
 
