@@ -94,7 +94,7 @@ class Reservation(models.Model):
             r.save()
 
     def __str__(self):
-        return self.Description() +" "+ str(self.start_time) + " to " + str(self.end_time)
+        return "Room:"+self.reserved_room + ", " + self.Description() +" "+ str(self.start_time) + " to " + str(self.end_time)
 
 
 def is_datetime_between(begin_time, end_time, check_time):

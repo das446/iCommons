@@ -33,7 +33,7 @@ def OrganizeRooms():
             organized_rooms[0].append(room)
         else:
             organized_rooms[1].append(room)
-
+    organized_rooms[0].sort(key=lambda x: x.number)
     return organized_rooms
 
 def GetCenterImage():
