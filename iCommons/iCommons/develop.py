@@ -22,4 +22,4 @@ ALLOWED_HOSTS = ['rack113.cs.drexel.edu', '129.25.13.213']
 
 IHELP_EMAIL = "ihelptesting@gmail.com"
 
-url = "http://rack113.cs.drexel.edu"
+URL = "http://rack113.cs.drexel.edu"

@@ -180,4 +180,4 @@ IHELP_EMAIL = "das446@drexel.edu"
 
 INTERNAL_IPS = '127.0.0.1'
 
-url = "http://127.0.0.1:8000"
+URL = "http://127.0.0.1:8000"

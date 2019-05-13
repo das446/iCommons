@@ -25,7 +25,7 @@ class Ticket(models.Model):
 
     def get_absolute_url(self):
         signed_pk = self.signer.sign(self.pk)
-        return reverse('ticket-view', kwargs={'signed_pk': signed_pk})
+        return reverse('tickets:view_ticket', kwargs={'signed_pk': signed_pk})
 
     def view(self):
         self.status = "seen"

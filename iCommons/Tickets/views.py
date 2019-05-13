@@ -22,14 +22,19 @@ def create(request):
         text = request.POST['text']
         email = request.POST['email']
         time = datetime.now()
-        Ticket.objects.create(requester=email, subject=subject, text=text, creation_date=time, status = "new")
-        send_email(email,subject,text,email)
+        ticket =  Ticket(requester=email, subject=subject, text=text, creation_date=time, status = "new")
+        ticket.save()
+        send_email(email,subject,text,email,ticket)
         return render(request, 'confirm.html')
 
-def send_email(from_email,subject,text,email):
+def send_email(from_email,subject,text,email,ticket):
     to_email = settings.IHELP_EMAIL
     print("from:" + from_email)
     send_mail(subject, text,from_email, [to_email], fail_silently=False) 
+
+    text = "Your ticket has been submited. You can view it here " + settings.URL + ticket.get_absolute_url()
+
+    send_mail(subject, text,to_email, [from_email], fail_silently=False) 
 
 def view_all(request):
     context = {}
