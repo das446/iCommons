@@ -19,7 +19,7 @@ from django.contrib.auth import login, authenticate
 class UserTest(TestCase):
     def setUp(self):
         self.user = User.objects.create_user(username='username', email='mail@mail.com', password='password')
-    def test_create_url(self):
+    def test_view_account(self):
         client = Client()
         response = client.get(reverse('users:account'))
         status = response.status_code
@@ -36,8 +36,8 @@ class UserTest(TestCase):
         login = self.client.login(username='username', password='password')
         self.assertIsNotNone(login)
 
-    def test_login_get(self):
-        client = Client()
-        response = client.get(reverse('users:login'))
-        status = response.status_code
-        self.assertEquals(status, 200)
+#    def test_login_get(self):
+#       client = Client()
+#       response = client.get(reverse('users:login'))
+#       status = response.status_code
+#       self.assertEquals(status, 200)
